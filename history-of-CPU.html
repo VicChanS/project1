@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap.min.css" />
+		<script src="bootstrap/js/jquery-3.1.1.js" type="text/javascript" charset="utf-8"></script>
+		<script src="bootstrap/js/bootstrap.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/feedback.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/navtop.js" type="text/javascript" charset="utf-8"></script>
+		<link rel="stylesheet" type="text/css" href="css/history-of-computer.css" />
+		<link rel="stylesheet" type="text/css" href="font/bootstrap-icons.css" />
+		<title>计算机硬件科普网-CPU发展史</title>
+	</head>
+	<body>
+		<div id="app">
+			<!-- 导航栏 -->
+			<div class="navtop container-fluid bg-light navbar-light ">
+				<nav class="container navbar navbar-expand-md ">
+					<!-- Brand -->
+					<a class="navbar-brand" href="#"><img src="img/logo.png"></a>
+
+					<!-- Toggler/collapsibe Button -->
+					<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+						<span class="navbar-toggler-icon"></span>
+					</button>
+					<!-- Navbar links -->
+					<div class="collapse navbar-collapse" id="collapsibleNavbar" style="margin-left: 50px;">
+						<ul class="navbar-nav">
+							<li class="nav-item">
+								<a class="nav-link" href="index.html">首页</a>
+							</li>
+							<li class="nav-item dropdown">
+								<a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">百科</a>
+								<div class="dropdown-menu">
+									<a class="dropdown-item" href="history-of-computer.html">计算机发展史</a>
+									<a class="dropdown-item" href="history-of-GPU.html">GPU发展史</a>
+									<a class="dropdown-item" href="history-of-CPU.html">CPU发展史</a>
+									<a class="dropdown-item" href="hardware.html">硬件百科</a>
+								</div>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link" href="news-center.html">新闻中心</a>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link" href="top.html">天梯图</a>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link" href="#" data-toggle="modal" data-target="#myModal">意见反馈</a>
+							</li>
+							<!-- 模态框 -->
+							<div class="modal fade" id="myModal">
+								<div class="modal-dialog">
+									<div class="modal-content">
+										<!-- 模态框头部 -->
+										<div class="modal-header">
+											<h4 class="modal-title">意见反馈&nbsp;<span class="small text-secondary" style="font-size: 12px;">您的意见对我们很有帮助</span></h4>
+											<button type="button" class="close" data-dismiss="modal">&times;</button>
+										</div>
+										<!-- 模态框主体 -->
+										<div class="modal-body">
+											<textarea class="form-control" rows="5" id="cmt"></textarea>
+										</div>
+										<!-- 模态框底部 -->
+										<div class="modal-footer">
+											<button type="button" class="btn btn-primary" id="ty">提交</button>
+											<button type="button" class="btn btn-secondary" data-dismiss="modal">关闭</button>
+										</div>
+									</div>
+								</div>
+							</div>
+							<li class="nav-item" id="login">
+								<a class="nav-link login" style="display: block;" href="login.html">登录</a>
+								<p class="nav-link user" style="display: none;"><i class="bi bi-person-circle"></i></p>
+							</li>
+
+							<li class="nav-item" id="register">
+								<a class="nav-link register" style="display: block;" href="register.html">注册</a>
+								<p class="nav-link logout" style="display: none;">登出</p>
+							</li>
+						</ul>
+					</div>
+				</nav>
+			</div>
+			<div class="history container-fluid">
+				<!-- 面包屑导航 -->
+				<div class="container">
+					<nav class="breadcrumb">
+						<a class="breadcrumb-item" href="index.html">首页</a>
+						<a class="breadcrumb-item" href="history-of-CPU.html">中央处理器（CPU）发展史</a>
+					</nav>
+					<!-- 内容 -->
+					<div class="row">
+						<div class="col-md-8">
+							<div class="news-header">
+								<h1>CPU发展历史</h1>
+							</div>
+							<div class="news-span small text-secondary">
+								<span>[创建于：2022-4-22]</span>——<span>[最后更新日期：2022-4-26]</span>
+							</div>
+							<div class="el-col-offset-1 news-content">
+								<h4>前言：</h4>
+								<p>CPU是Central Processing
+									Unit（中央微处理器）的缩写，由运算器和控制器两部分组成，按照其处理信息的字长，CPU可以分为：4位微处理器、8位微处理器、16位微处理器、32位微处理器以及正在走红的64位微处理器。</p>
+								<h4>一、CPU发展的孕育期（1971~1978) <span class="text-secondary small"> 代表CPU：intel 4004、8008</span></h4>
+								<div class="content">
+									<p>世界上第一款可用于微型计算机的4位处理器，是英特尔公司于1971年推出的包含了2300个晶体管的4004。由于性能很差，市场反应十分冷淡。
+										于是Intel公司随后又研制出了8080处理器、8085处理器，加上当时Motorola公司的MC6800微处理器和Zilog公司的Z80微处理器，一起组成了8位微处理器的家族。</p>
+									<img src="img/intel%204004.jpg">
+								</div>
+								<h4>二、CPU发展的摇篮期（1978~1979）<span class="text-secondary small"> 代表CPU：intel 8086、8088</span></h4>
+								<div class="content">
+									<p>这期间的代表是英特尔公司1978年推出的这款8086处理器，它是第一块16位微处理器，最高主频为8MHz，内存寻址能力为1MB。同时英特尔还生产出与之相配合的数学协处理器8087,这两种芯片使用相互兼容的指令集，但i8087指令集中增加了一些专门用于对数、指数和三角函数等数学计算的指令，人们将这些指令集统一称之为
+										x86指令集。虽然以后英特尔又陆续生产出第二代、第三代等更先进和更快的新型CPU，但都仍然兼容原来的x86指令。从这点上来说，虽然用今天的眼光看来，8086的性能是那么的不堪，但是它的诞生却奠定了以后CPU发展的基础。</p>
+									<img src="img/8086.jpeg">
+									<p>
+										1979年，英特尔公司再接再厉，又开发出了8088。8088集成了约29000个晶体管，采用40针的DIP封装，最高频率为8MHz。
+										也正是从8088开始，PC（个人电脑）的概念开始在全世界范围内发展起来，因为1981年IBM公司将8088芯片首先用于其研制的PC机中，标志着PC真正走进了人们的工作生活之中。
+									</p>
+									<img src="img/8088.jpeg">
+								</div>
+								<h4>三、CPU发展的婴幼期（1979~1985）<span class="text-secondary small">代表CPU：Intel 80286</span> </h4>
+								<div class="content">
+									<img src="img/80286.jpeg">
+									<p>1982年，英特尔公司在8086的基础上，研制出了80286微处理器，它 是一颗真正为PC而存在的CPU，IBM公司将80286微处理器首先用在AT机中，引起了业界了极大的轰动。80286
+										采用PGA封装，集成了大约130000个晶体管，最大主频为20MHz，内、外部数据传输均为16位，使用24位内存储器的寻址，内存寻址能力为16MB，可使用的工作方式包括实模式和保护模式两种。在这之前，
+										INTEL也发布过80186 CPU，这是一颗性能介于8088，80286之间的的CPU，但因为某种原因，80186从来都没有在PC中应用过。</p>
+								</div>
+							</div>
+						</div>
+						<!-- 右侧推荐栏 -->
+						<div class="col-md-3 el-col-offset-1">
+							<h5>为您推荐</h5>
+							<div class="row">
+								<div class="col-md-12 img-thumbnail">
+									<img src="img/ch.jpeg">
+									<p>计算机发展史</p>
+									<button type="button" class="btn btn-primary"><a href="history-of-computer.html">了解更多</a></button>
+								</div>
+								<div class="col-md-12 img-thumbnail">
+									<img src="img/gpu.jpeg">
+									<p>图形处理器（GPU）发展史</p>
+									<button type="button" class="btn btn-primary"><a href="history-of-GPU.html">了解更多</a></button>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- 底部 -->
+			<div class="footer container-fluid">
+				<div class="container ">
+					<div class="beian">
+						<p>计算机硬件科普网</p>
+						<p>仅作为学习科普使用，无任何商业用途</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>

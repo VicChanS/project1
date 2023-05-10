@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap.min.css" />
+		<script src="bootstrap/js/jquery-3.1.1.js" type="text/javascript" charset="utf-8"></script>
+		<script src="bootstrap/js/bootstrap.js" type="text/javascript" charset="utf-8"></script>
+		<script src="vue/vue.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/navtop.js" type="text/javascript" charset="utf-8"></script>
+		<script src="vue/elementindex.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/feedback.js" type="text/javascript" charset="utf-8"></script>
+		<link rel="stylesheet" type="text/css" href="font/bootstrap-icons.css" />
+		<link rel="stylesheet" type="text/css" href="css/element.css" />
+		<link rel="stylesheet" type="text/css" href="css/news-center.css" />
+		<title>计算机硬件科普网-最新资讯</title>
+	</head>
+	<body>
+		<div id="app">
+			<div class="navtop container-fluid bg-light navbar-light ">
+				<nav class="container navbar navbar-expand-md ">
+					<!-- Brand -->
+					<a class="navbar-brand" href="#"><img src="img/logo.png"></a>
+
+					<!-- Toggler/collapsibe Button -->
+					<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+						<span class="navbar-toggler-icon"></span>
+					</button>
+
+					<!-- Navbar links -->
+					<div class="collapse navbar-collapse" id="collapsibleNavbar" style="margin-left: 50px;">
+						<ul class="navbar-nav">
+							<li class="nav-item">
+								<a class="nav-link" href="index.html">首页</a>
+							</li>
+							<li class="nav-item dropdown">
+								<a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">百科</a>
+								<div class="dropdown-menu">
+									<a class="dropdown-item" href="history-of-computer.html">计算机发展史</a>
+									<a class="dropdown-item" href="history-of-GPU.html">GPU发展史</a>
+									<a class="dropdown-item" href="history-of-CPU.html">CPU发展史</a>
+									<a class="dropdown-item" href="hardware.html">硬件百科</a>
+								</div>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link" href="news-center.html">新闻中心</a>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link" href="top.html">天梯图</a>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link" href="#" data-toggle="modal" data-target="#myModal">意见反馈</a>
+							</li>
+							<!-- 模态框 -->
+							<div class="modal fade" id="myModal">
+								<div class="modal-dialog">
+									<div class="modal-content">
+										<!-- 模态框头部 -->
+										<div class="modal-header">
+											<h4 class="modal-title">意见反馈&nbsp;<span class="small text-secondary" style="font-size: 12px;">您的意见对我们很有帮助</span></h4>
+											<button type="button" class="close" data-dismiss="modal">&times;</button>
+										</div>
+										<!-- 模态框主体 -->
+										<div class="modal-body">
+											<textarea class="form-control" rows="5" id="cmt"></textarea>
+										</div>
+										<!-- 模态框底部 -->
+										<div class="modal-footer">
+											<button type="button" class="btn btn-primary" id="ty">提交</button>
+											<button type="button" class="btn btn-secondary" data-dismiss="modal">关闭</button>
+										</div>
+									</div>
+								</div>
+							</div>
+							<li class="nav-item" id="login">
+								<a class="nav-link login" style="display: block;" href="login.html">登录</a>
+								<p class="nav-link user" style="display: none;"><i class="bi bi-person-circle"></i></p>
+							</li>
+
+							<li class="nav-item" id="register">
+								<a class="nav-link register" style="display: block;" href="register.html">注册</a>
+								<p class="nav-link logout" style="display: none;">登出</p>
+							</li>
+						</ul>
+					</div>
+				</nav>
+			</div>
+			<div class="newslist container-fluid">
+				<div class="container">
+					<nav class="breadcrumb">
+						<!-- 面包屑导航 -->
+						<a class="breadcrumb-item" href="index.html">首页</a>
+						<a class="breadcrumb-item" href="news-center.html">最新资讯</a>
+					</nav>
+					<!-- 列表组 -->
+					<div class="news">
+						<div class="tabnews">
+							<el-tabs :tab-position="tabPosition">
+								<el-tab-pane label="硬件">
+									<ul class="list-group">
+										<li class="list-group-item"><a href="#">芝奇发布32GB DDR5-6600 CL34超低延迟内存</a></li>
+										<li class="list-group-item"><a href="#">性能强大：RTX 4090整卡功耗或高达600W</a></li>
+										<li class="list-group-item"><a href="#">七彩虹全新CVN主板 一个令人神往的虚拟</a></li>
+										<li class="list-group-item"><a href="#">泰坦军团 27A6MR显示器评测：极致游戏体验</a></li>
+										<li class="list-group-item"><a href="#">技嘉RTX3090Ti魔鹰OC：鹰击长空展现王者风范</a></li>
+										<li class="list-group-item"><a href="#">游戏平台3月硬件调查：4核处理器跌下神坛</a></li>
+										<li class="list-group-item"><a href="#">固态级高速传输，三星Type-C U盘给你全新体验</a></li>
+										<li class="list-group-item"><a href="#">英特尔旗舰卡性能曝光：配备512个计算单元</a></li>
+										<li class="list-group-item"><a href="#">光追体验+军工品质 华硕新显卡真的很强</a></li>
+										<li class="list-group-item"><a href="#">英特尔16核笔记本处理器曝光：顶级游戏本利器</a></li>
+										<li class="list-group-item"><a href="#">苹果M1 Ultra首露真容：封装面积大到无可匹敌</a></li>
+										<li class="list-group-item"><a href="#">十代酷睿首发:i9升级10核5.3GHz,全系规格暴涨</a></li>
+										<li class="list-group-item"><a href="#">迷你主机性能天花板！Intel龙峡谷NUC上手体验</a></li>
+										<li class="list-group-item"><a href="#">最弱i5打赢上代i9？第十一代酷睿单核性能太凶了</a></li>
+										<li class="list-group-item"><a href="#">微星发布新BIOS功能：CPU散热器自适应 释放更强</a></li>
+									</ul>
+								</el-tab-pane>
+								<el-tab-pane label="手机通讯">
+									<ul class="list-group">
+										<li class="list-group-item"><a href="#">苹果iPhone 15 Pro：屏下摄像头+潜望式摄像头</a></li>
+										<li class="list-group-item"><a href="#">强强联合，MediaTek联合一加Ace，超稳王牌即将袭来</a></li>
+										<li class="list-group-item"><a href="#">iOS 16即将揭开神秘面纱 苹果iOS系统将近完美</a></li>
+										<li class="list-group-item"><a href="#">手机影像强者如云，这三台旗舰实力登峰造极</a></li>
+										<li class="list-group-item"><a href="#">中国电信3月5G套餐用户数净增861万户，累计2.1075亿户</a></li>
+										<li class="list-group-item"><a href="#">Omdia报告：5G和边缘计算推动SD-WAN市场</a></li>
+										<li class="list-group-item"><a href="#">中国电信甘肃公司5G核心网扩容采购：华为中标</a></li>
+										<li class="list-group-item"><a href="#">5G手机需求暴跌上亿部 安卓、苹果齐砍单</a></li>
+										<li class="list-group-item"><a href="#">骁龙并不只有极致性能，它的强大可能超乎你想象</a></li>
+										<li class="list-group-item"><a href="#">联发科天玑9000来了！首破100w跑分，网友高呼：联发科yes！</a></li>
+										<li class="list-group-item"><a href="#">联发科天玑1100与天玑1000+对比差距大吗 有什么区别</a></li>
+										<li class="list-group-item"><a href="#">三星Exynos 1280处理器参数公布 采用5nm工艺</a></li>
+										<li class="list-group-item"><a href="#">vivo X80发布会，新裤子乐队现场献声</a></li>
+										<li class="list-group-item"><a href="#">中兴Axon 40正式预热，“三轮车变方程式”</a></li>
+										<li class="list-group-item"><a href="#">将用全新铰链+双电芯 三星Galaxy Z Fold 4折叠屏规格曝光</a></li>
+									</ul>
+								</el-tab-pane>
+								<el-tab-pane label="智能家居">
+									<ul class="list-group">
+										<li class="list-group-item"><a href="#">众多黑科技加持与金融级安全架构 华为智能门锁系列看点</a></li>
+										<li class="list-group-item"><a href="#">寒冬之下争第一，TCL的全场景生态凭什么如此硬气？</a></li>
+										<li class="list-group-item"><a href="">一到夏季电费就多，这些智能家电帮你节约耗能</a></li>
+										<li class="list-group-item"><a href="#">2K全景高像素，创维小湃P20家用摄像头如此清晰</a></li>
+										<li class="list-group-item"><a href="#">家庭8K新选择 国行三星Neo QLED 8K电视开始预售</a></li>
+										<li class="list-group-item"><a href="#">健康智能完美结合，让你“看”见冰箱异味！云米AI冰箱21Face 2S评测</a></li>
+										<li class="list-group-item"><a href="#">一直用一直爽：西门子热泵式干衣机“真香”</a></li>
+										<li class="list-group-item"><a href="#">不忽悠年轻人！TCL T7E全通道4K 144Hz真高刷电视震撼发布</a></li>
+										<li class="list-group-item"><a href="#">扫拖洗多维一体！shark鲨客洗地机E1带你体验高效家居清洁</a></li>
+										<li class="list-group-item"><a href="#">曾为微软苹果伙伴 智能家居公司Insteon疑似倒闭</a></li>
+										<li class="list-group-item"><a href="#">个性时尚与智能科技，构造三星BESPOKE HOME新家居时代</a></li>
+										<li class="list-group-item"><a href="#">居然之家&海尔智家超现象级大促振势收官</a></li>
+										<li class="list-group-item"><a href="#">不用忍受无味养生餐？日本研发增强咸味的电子筷</a></li>
+										<li class="list-group-item"><a href="#">什么是“看得见的安全感”？智能锁10大黑科技为您揭秘</a></li>
+										<li class="list-group-item"><a href="#">央视公布的十大净水器品牌，究竟有哪些优势？</a></li>
+									</ul>
+								</el-tab-pane>
+								<el-tab-pane label="软件资讯">
+									<ul class="list-group">
+										<li class="list-group-item"><a href="#">Win11王牌软件迎来进化！Edge浏览器新功能前瞻</a></li>
+										<li class="list-group-item"><a href="#">字节跳动出品的听歌App！汽水音乐App详细体验</a></li>
+										<li class="list-group-item"><a href="#">终身免费！微软数据恢复工具WinFR界面版体验</a></li>
+										<li class="list-group-item"><a href="#">Win11硬伤没法忍！一招将Win11界面改回Win10</a></li>
+										<li class="list-group-item"><a href="#">爱奇艺宣布更换新品牌 Logo：iQIYI“破框而出”</a></li>
+										<li class="list-group-item"><a href="#">系统竟会变卡？微软解释为何Win11不显示秒针</a></li>
+										<li class="list-group-item"><a href="#">汽车里还能看视频刷弹幕！B站车机版详细体验</a></li>
+										<li class="list-group-item"><a href="#">电脑能玩手机App还能互传文件！快来试试这神器</a></li>
+										<li class="list-group-item"><a href="#">Win11抛弃IE网银不答应！教你在Edge调用IE模</a>式</li>
+										<li class="list-group-item"><a href="#">微软出品的电脑管家正式上线了！看看都有啥功能</a></li>
+										<li class="list-group-item"><a href="#">电脑刷抖音的正确姿势？真正好用的抖音电脑版</a></li>
+										<li class="list-group-item"><a href="#">GIF发明人不幸离世！你知道如何录制GIF吗</a></li>
+										<li class="list-group-item"><a href="#">MacBook小容量根本不够用？这神器给你一键解决</a></li>
+										<li class="list-group-item"><a href="#">火狐竟禁止屏蔽广告？教你如何手动安装uBlock</a></li>
+										<li class="list-group-item"><a href="#">iPadOS即将大改？iPad生产力想比肩PC还缺什么</a></li>
+									</ul>
+								</el-tab-pane>
+							</el-tabs>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- 底部 -->
+			<div class="footer container-fluid">
+				<div class="container ">
+					<div class="beian">
+						<p>计算机硬件科普网</p>
+						<p>仅作为学习科普使用，无任何商业用途</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</body>
+
+	<script>
+		new Vue({
+			el: '#app',
+			data() {
+				return {
+					tabPosition: 'left'
+				}
+			},
+		})
+	</script>
+</html>

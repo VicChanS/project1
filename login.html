@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap.min.css" />
+		<script src="bootstrap/js/jquery-3.1.1.js" type="text/javascript" charset="utf-8"></script>
+		<script src="bootstrap/js/bootstrap.min.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/feedback.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/login.js" type="text/javascript" charset="utf-8"></script>
+		<link rel="stylesheet" type="text/css" href="css/register.css" />
+		<link rel="stylesheet" type="text/css" href="font/bootstrap-icons.css" />
+		<title>计算机硬件科普网-登录</title>
+	</head>
+
+	<body data-spy="scroll" data-target="#myScrollspy">
+		<div id="app">
+			<!-- 导航栏 -->
+			<div class="navtop container-fluid bg-light navbar-light ">
+				<nav class="container navbar navbar-expand-md ">
+					<!-- Brand -->
+					<a class="navbar-brand" href="#"><img src="img/logo.png"></a>
+					<!-- Toggler/collapsibe Button -->
+					<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+						<span class="navbar-toggler-icon"></span>
+					</button>
+					<!-- Navbar links -->
+					<div class="collapse navbar-collapse" id="collapsibleNavbar" style="margin-left: 50px;">
+						<ul class="navbar-nav">
+							<li class="nav-item">
+								<a class="nav-link" href="index.html">首页</a>
+							</li>
+							<li class="nav-item dropdown">
+								<a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">百科</a>
+								<div class="dropdown-menu">
+									<a class="dropdown-item" href="history-of-computer.html">计算机发展史</a>
+									<a class="dropdown-item" href="history-of-GPU.html">GPU发展史</a>
+									<a class="dropdown-item" href="history-of-CPU.html">CPU发展史</a>
+									<a class="dropdown-item" href="hardware.html">硬件百科</a>
+								</div>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link" href="news-center.html">新闻中心</a>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link" href="top.html">天梯图</a>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link" href="#" data-toggle="modal" data-target="#myModal">意见反馈</a>
+							</li>
+							<!-- 反馈-模态框 -->
+							<div class="modal fade" id="myModal">
+								<div class="modal-dialog">
+									<div class="modal-content">
+										<!-- 模态框头部 -->
+										<div class="modal-header">
+											<h4 class="modal-title">意见反馈&nbsp;<span class="small text-secondary" style="font-size: 12px;">您的意见对我们很有帮助</span></h4>
+											<button type="button" class="close" data-dismiss="modal">&times;</button>
+										</div>
+										<!-- 模态框主体 -->
+										<div class="modal-body">
+											<textarea class="form-control" rows="5" id="cmt"></textarea>
+										</div>
+										<!-- 模态框底部 -->
+										<div class="modal-footer">
+											<button type="button" class="btn btn-primary" id="ty">提交</button>
+											<button type="button" class="btn btn-secondary" data-dismiss="modal">关闭</button>
+										</div>
+									</div>
+								</div>
+							</div>
+							<li class="nav-item">
+								<a class="nav-link" href="login.html">登录</a>
+							</li>
+							<!-- 模态框 -->
+							<div class="modal fade" id="login">
+								<div class="modal-dialog">
+									<div class="modal-content">
+										<!-- 模态框头部 -->
+										<div class="modal-header">
+											<h4 class="modal-title">意见反馈&nbsp;<span class="small text-secondary" style="font-size: 12px;">您的意见对我们很有帮助</span></h4>
+											<button type="button" class="close" data-dismiss="modal">&times;</button>
+										</div>
+										<!-- 模态框主体 -->
+										<div class="modal-body">
+											<textarea class="form-control" rows="5" id="cmt"></textarea>
+										</div>
+										<!-- 模态框底部 -->
+										<div class="modal-footer">
+											<button type="button" class="btn btn-primary" id="ty">提交</button>
+											<button type="button" class="btn btn-secondary" data-dismiss="modal">关闭</button>
+										</div>
+									</div>
+								</div>
+							</div>
+
+							<li class="nav-item">
+								<a class="nav-link" href="register.html">注册</a>
+							</li>
+
+						</ul>
+					</div>
+				</nav>
+			</div>
+			<!-- 登录框 -->
+			<div class="container register img-thumbnail">
+				<div class="row">
+					<div class="col-md-12" style="margin-top: 20px;">
+						<h1>登录您的账号</h1>
+					</div>
+				</div>
+				<div class="row" style="padding-bottom: 20px;">
+					<div class="col-sm-6">
+						<div class="row">
+							<div class="col-sm-8" style="margin-top: 20px;">
+								<form>
+									<div class="form-group">
+										<label for="uname">用户名:</label>
+										<input type="text" class="form-control" id="uname">
+									</div>
+									<div class="form-group">
+										<label for="pwd">密码:</label>
+										<input type="password" class="form-control" id="pwd">
+									</div>
+									<button type="button" id="btn" class="btn btn-primary" style="margin-top: 20px; margin-bottom: 20px;">提交</button>
+								</form>
+							</div>
+							<div class="col-sm-4 " style="margin-top: 20px;">
+								<p>使用其他渠道注册</p>
+								<button class="btn btn-primary" style="margin-bottom: 40px;"><i class="bi bi-phone-fill"></i>使用手机号登录</button>
+							</div>
+						</div>
+					</div>
+					<div class="col-sm-6">
+						<div class="img-thumbnail">
+							<img src="img/cpu-5.jpg" style="width: 100%;">
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- 底部 -->
+			<div class="footer container-fluid">
+				<div class="container ">
+					<div class="beian">
+						<p>计算机硬件科普网</p>
+						<p>仅作为学习科普使用，无任何商业用途</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>

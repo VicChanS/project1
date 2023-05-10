@@ -1,0 +1,63 @@
+* {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	text-decoration: none;
+	box-sizing: border-box;
+}
+
+
+a:hover {
+	text-decoration: none;
+}
+
+
+
+
+.logosearch {
+	margin: 0 auto;
+	display: flex;
+	margin-top: 30px;
+}
+
+
+.logosearch .form-inline {
+	margin-top: 20px;
+
+}
+
+
+.logosearch .form-inline .btn {
+	margin-left: 20px;
+}
+
+
+.primarynav {
+	margin-top: 20px;
+	background-color: #00acf5;
+}
+
+.smart-phone {
+	margin-top: 20px;
+	margin-bottom: 20px;
+}
+
+.smart-phone .breadcrumb a {
+	color: #000000;
+}
+
+.smart-phone .list-group {
+	margin-bottom: 20px;
+}
+
+
+.footer {
+	padding-bottom: 20px;
+	background-color: #f8f9fa;
+	border-top: 2px solid #f0f0f0;
+}
+
+.beian p {
+	margin-top: 20px;
+	text-align: center;
+}

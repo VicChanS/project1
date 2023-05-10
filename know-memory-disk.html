@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap.min.css" />
+		<script src="bootstrap/js/jquery-3.1.1.js" type="text/javascript" charset="utf-8"></script>
+		<script src="bootstrap/js/bootstrap.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/feedback.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/navtop.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/comment.js" type="text/javascript" charset="utf-8"></script>
+		<link rel="stylesheet" type="text/css" href="css/history-of-computer.css" />
+		<link rel="stylesheet" type="text/css" href="font/bootstrap-icons.css" />
+		<title>计算机硬件科普网-电脑内存</title>
+	</head>
+	<body>
+		<div id="app">
+			<div class="navtop container-fluid bg-light navbar-light ">
+				<nav class="container navbar navbar-expand-md ">
+					<!-- Brand -->
+					<a class="navbar-brand" href="#"><img src="img/logo.png"></a>
+
+					<!-- Toggler/collapsibe Button -->
+					<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+						<span class="navbar-toggler-icon"></span>
+					</button>
+
+					<!-- Navbar links -->
+					<div class="collapse navbar-collapse" id="collapsibleNavbar" style="margin-left: 50px;">
+						<ul class="navbar-nav">
+							<li class="nav-item">
+								<a class="nav-link" href="index.html">首页</a>
+							</li>
+							<li class="nav-item dropdown">
+								<a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">百科</a>
+								<div class="dropdown-menu">
+									<a class="dropdown-item" href="history-of-computer.html">计算机发展史</a>
+									<a class="dropdown-item" href="history-of-GPU.html">GPU发展史</a>
+									<a class="dropdown-item" href="history-of-CPU.html">CPU发展史</a>
+									<a class="dropdown-item" href="hardware.html">硬件百科</a>
+								</div>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link" href="news-center.html">新闻中心</a>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link" href="top.html">天梯图</a>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link" href="#" data-toggle="modal" data-target="#myModal">意见反馈</a>
+							</li>
+							<!-- 模态框 -->
+							<div class="modal fade" id="myModal">
+								<div class="modal-dialog">
+									<div class="modal-content">
+										<!-- 模态框头部 -->
+										<div class="modal-header">
+											<h4 class="modal-title">意见反馈&nbsp;<span class="small text-secondary" style="font-size: 12px;">您的意见对我们很有帮助</span></h4>
+											<button type="button" class="close" data-dismiss="modal">&times;</button>
+										</div>
+										<!-- 模态框主体 -->
+										<div class="modal-body">
+											<textarea class="form-control" rows="5" id="cmt"></textarea>
+										</div>
+										<!-- 模态框底部 -->
+										<div class="modal-footer">
+											<button type="button" class="btn btn-primary" id="ty">提交</button>
+											<button type="button" class="btn btn-secondary" data-dismiss="modal">关闭</button>
+										</div>
+									</div>
+								</div>
+							</div>
+							<li class="nav-item" id="login">
+								<a class="nav-link login" style="display: block;" href="login.html">登录</a>
+								<p class="nav-link user" style="display: none;"><i class="bi bi-person-circle"></i></p>
+							</li>
+
+							<li class="nav-item" id="register">
+								<a class="nav-link register" style="display: block;" href="register.html">注册</a>
+								<p class="nav-link logout" style="display: none;">登出</p>
+							</li>
+						</ul>
+					</div>
+				</nav>
+			</div>
+			<div class="history container-fluid">
+				<div class="container">
+					<!-- 面包屑导航 -->
+					<nav class="breadcrumb">
+						<a class="breadcrumb-item" href="index.html">首页</a>
+						<a class="breadcrumb-item" href="hardware.html">硬件百科</a>
+						<a class="breadcrumb-item" href="know-memory-disk.html">电脑内存</a>
+					</nav>
+					<!-- 内容 -->
+					<div class="row">
+						<div class="col-md-1"></div>
+						<div class="col-md-10">
+							<div class="news-header">
+								<h1>电脑内存</h1>
+							</div>
+							<div class="news-span small text-secondary">
+								<span>[创建于：2022-4-22]</span>——<span>[最后更新日期：2022-4-27]</span>
+							</div>
+							<div class="news-content">
+								<p>内存(Memory)是计算机的重要部件，也称内存储器和主存储器，它用于暂时存放CPU中的运算数据，以及与硬盘等外部存储器交换的数据。它是外存与CPU进行沟通的桥梁，计算机中所有程序的运行都在内存中进行，
+									内存性能的强弱影响计算机整体发挥的水平。只要计算机开始运行，操作系统就会把需要运算的数据从内存调到CPU中进行运算，当运算完成，CPU将结果传送出来。</p>
+								<p>内存的运行决定计算机整体运行快慢。</p>
+								<p>内存条由内存芯片、电路板、金手指等部分组成。</p>
+								<h4>简介</h4>
+								<div class="content">
+									<p>在计算机的组成结构中有一个很重要的部分是存储器。它是用来存储程序和数据的部件。</p>
+									<p>存储器的种类很多。按其用途可分为主存储器和辅助存储器，主存储器又称内存储器（简称内存，港台称之为记忆体）。</p>
+									<p>我们平常使用的程序，如：Windows操作系统、打字软件、游戏软件等。一般安装在硬盘等外存上，但仅此是不能使用其功能，必须把它们调入内存中运行，才能真正使用其功能。</p>
+									<img src="img/m-1.jpg">
+								</div>
+								<h4>关于DDR</h4>
+								<p>DDR（双倍数据速率）——翻译为“双倍数据速率”。您可以在各种智能设备的描述上找到这些特性。</p>
+								<div class="content">
+									<h5>初代DDR</h5>
+									<p>这种内存的第一代，最初用于显卡，后来开始用于芯片组。这种内存在 200 到 400 MHz 的频率下工作。</p>
+									<h5>DDR2 <span class="small text-secondary"> - 于 2004 年发布，成为新一代此类 RAM。</span></h5>
+									<p>这种类型的内存设计用于当时的计算机，与上一代相比具有更高的性能。这种存储器的有效数据传输速度可达 1200 MHz。</p>
+									<h5>DDR3 <span class="small text-secondary"> - 这一代内存变得更好，性能翻了一番，功耗也降低了很多。</span></h5>
+									<p>这种类型的内存仍然还有很多电脑在使用，并且由于其便宜而被广泛使用，特别是在预算有限时，用于一般家用、娱乐、小型办公的电脑上还是相对不错的。工作频率高达 2400 MHz。</p>
+									<h5>DDR4 <span class="small text-secondary"> - 2014 年开始量产。这种内存的带宽可以达到 25.6 GB / s，可以在高达 3200 MHz 的频率下运行。</span></h5>
+									<p>总的来说，工作的速度和可靠性提高了很多。现在，这一代内存用于高档的旗舰电脑中。</p>
+									<p>当然，如果你为长远考虑，在选择笔记本电脑或台式机时最好注意这一代内存。</p>
+									<h5>DDR5 <span class="small text-secondary"> - 是一种全新的内存。值得注意的是最近的一个事件，即三星在 2021 年推出了 512 GB DDR5-7200 RAM 模块。</span></h5>
+									<p>该内存的性能是 DDR4 的两倍，速度高达每秒 7200 兆位 (Mbps)。</p>
+									<p>到目前为止，这家公司是这项技术的第一家，而它很可能会逐渐开始将这种内存引入她的新电子设备中。</p>
+									<img src="img/m-0.jpeg">
+								</div>
+								<!-- 查看上一条文章或下一条 -->
+								<div class="linkto">
+									<a href="know-CPU.html" style="float: left;">查看上一条文章：中央处理器</a>
+									<a href="know-mds.html" style="float: right;">查看下一条文章：电脑储存盘</a>
+								</div>
+							</div>
+						</div>
+						<div class="col-md-1"></div>
+					</div>
+					<!-- 评论功能 -->
+					<div class="comment-area">
+						<!-- 操作的界面 -->
+						<form>
+							<div class="form-group">
+								<label for="area">评论:</label>
+								<textarea placeholder="说点什么吧..." class="form-control" id="area" cols="30" rows="10"></textarea>
+								<div class="row submit">
+									<div class="col-md-10"></div>
+									<div class="col-md-2">
+										<span class="useCount">0</span> <span>/</span> <span>200</span> <button class="btn btn-primary" id="send">发布</button>
+									</div>
+								</div>
+							</div> <!-- 微博内容列表 -->
+							<div class="contentList">
+								<ul> </ul>
+							</div>
+						</form>
+
+					</div>
+				</div>
+			</div>
+			<!-- 底部 -->
+			<div class="footer container-fluid">
+				<div class="container ">
+					<div class="beian">
+						<p>计算机硬件科普网</p>
+						<p>仅作为学习科普使用，无任何商业用途</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>

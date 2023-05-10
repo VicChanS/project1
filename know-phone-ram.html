@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap.min.css" />
+		<script src="bootstrap/js/jquery-3.1.1.js" type="text/javascript" charset="utf-8"></script>
+		<script src="bootstrap/js/bootstrap.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/feedback.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/navtop.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/comment.js" type="text/javascript" charset="utf-8"></script>
+		<link rel="stylesheet" type="text/css" href="css/history-of-computer.css" />
+		<link rel="stylesheet" type="text/css" href="font/bootstrap-icons.css" />
+		<title>计算机硬件科普网-手机运行内存</title>
+	</head>
+	<body>
+		<div id="app">
+			<div class="navtop container-fluid bg-light navbar-light ">
+				<nav class="container navbar navbar-expand-md ">
+					<!-- Brand -->
+					<a class="navbar-brand" href="#"><img src="img/logo.png"></a>
+
+					<!-- Toggler/collapsibe Button -->
+					<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+						<span class="navbar-toggler-icon"></span>
+					</button>
+
+					<!-- Navbar links -->
+					<div class="collapse navbar-collapse" id="collapsibleNavbar" style="margin-left: 50px;">
+						<ul class="navbar-nav">
+							<li class="nav-item">
+								<a class="nav-link" href="index.html">首页</a>
+							</li>
+							<li class="nav-item dropdown">
+								<a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">百科</a>
+								<div class="dropdown-menu">
+									<a class="dropdown-item" href="history-of-computer.html">计算机发展史</a>
+									<a class="dropdown-item" href="history-of-GPU.html">GPU发展史</a>
+									<a class="dropdown-item" href="history-of-CPU.html">CPU发展史</a>
+									<a class="dropdown-item" href="hardware.html">硬件百科</a>
+								</div>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link" href="news-center.html">新闻中心</a>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link" href="top.html">天梯图</a>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link" href="#" data-toggle="modal" data-target="#myModal">意见反馈</a>
+							</li>
+							<!-- 模态框 -->
+							<div class="modal fade" id="myModal">
+								<div class="modal-dialog">
+									<div class="modal-content">
+										<!-- 模态框头部 -->
+										<div class="modal-header">
+											<h4 class="modal-title">意见反馈&nbsp;<span class="small text-secondary" style="font-size: 12px;">您的意见对我们很有帮助</span></h4>
+											<button type="button" class="close" data-dismiss="modal">&times;</button>
+										</div>
+										<!-- 模态框主体 -->
+										<div class="modal-body">
+											<textarea class="form-control" rows="5" id="cmt"></textarea>
+										</div>
+										<!-- 模态框底部 -->
+										<div class="modal-footer">
+											<button type="button" class="btn btn-primary" id="ty">提交</button>
+											<button type="button" class="btn btn-secondary" data-dismiss="modal">关闭</button>
+										</div>
+									</div>
+								</div>
+							</div>
+							<li class="nav-item" id="login">
+								<a class="nav-link login" style="display: block;" href="login.html">登录</a>
+								<p class="nav-link user" style="display: none;"><i class="bi bi-person-circle"></i></p>
+							</li>
+
+							<li class="nav-item" id="register">
+								<a class="nav-link register" style="display: block;" href="register.html">注册</a>
+								<p class="nav-link logout" style="display: none;">登出</p>
+							</li>
+						</ul>
+					</div>
+				</nav>
+			</div>
+			<div class="history container-fluid">
+				<div class="container">
+					<!-- 面包屑导航 -->
+					<nav class="breadcrumb">
+						<a class="breadcrumb-item" href="index.html">首页</a>
+						<a class="breadcrumb-item" href="hardware.html">硬件百科</a>
+						<a class="breadcrumb-item" href="know-phone-ram.html">智能手机运行内存</a>
+					</nav>
+					<!-- 内容 -->
+					<div class="row">
+						<div class="col-md-1"></div>
+						<div class="col-md-10">
+							<div class="news-header">
+								<h1>智能手机运行内存(RAM)</h1>
+							</div>
+							<div class="news-span small text-secondary">
+								<span>[创建于：2022-4-22]</span>——<span>[最后更新日期：2022-4-27]</span>
+							</div>
+							<div class="news-content">
+								<h4>关于内存和运行内存</h4>
+								<div class="content">
+									<p>对于内存和运营内存的区别，很多人分不清楚。甚至将这其中的差别向混淆。比如说前些年，由于手机后台运行的软件、应用太多，
+										导致2G内存只剩下几百MB，手机出现卡顿甚至黑屏，很多人不理解问：这手机不是8G吗？
+										怎么就变成了2G？其实这就是分不清运行内存和内存的明显区别。所谓8G，指的是内存，而2G，指的是运行内存。</p>
+								</div>
+								<h4>一、运行内存和内存的区别</h4>
+								<div class="content">
+									<p>内存，指的是存储数据的容量。举个简单的例子，比如说你的手机有64G内存，那么理论上，你的手机最起码可以存储60G+的数据。</p>
+									<p>而运行内存，指的是手机在运行的时候，可以用来处理任务的内存，比如说你的手机的运行内存是4G，那么，你手机处理的任务所占的内存，只能在4G范围之内。</p>
+									<p>如果用来做比喻的话，可以这样理解：内存好比一个人的记忆极限，即：大脑可以记住多少东西、储备多少知识，而运行内存则可以理解成大脑的运算速度以及资料调用效率。</p>
+									<img src="img/ram-0.jpeg">
+									<p>现实中很多人就是这样，有的人擅长分析之类的，这就可以理解成运行内存大，而有的人记忆力好，但是分析之类的却很差， 这就可以理解成运行内存小，但是内存很大。</p>
+									<p>因此，手机的配置，应该让运行内存和内存处于协调的状态。再打个比方：运行内存可以理解成电脑的CPU，而内存可以理解成电脑的硬盘大小。</p>
+									<p>如果系统盘太小，那么，电脑在运行工作的时候，卡顿的情况肯定会不断发生。而如果CPU性能太低，那么，即便是硬盘再大，也改变不了卡顿的现状。因此最好的模式就是CPU和硬盘大小互相协调。</p>
+								</div>
+								<h4>二、运行内存大的不一定比小的强</h4>
+								<div class="content">
+									<p>在当下，市场上大部分的智能机的运行内存，或者是4G的，或者是6G的。很多人会将问题简单化，认为6G的运行内存肯定碾压4G的。但是，这种想法是错误的。</p>
+									<p>因为衡量一个手机的好坏，不能光看一点，6G运行内存确实比4G运行内存好太多，但是，如果6G的运行内存配置的是64G内存，
+										而4G运行内存的手机配置的内存比64G内存高很多的话，那么，很显然，4G内存的这款手机要占据很大优势。</p>
+									<img src="img/ram-1.png">
+									<p>因为首先，手机的后台应用如果得到合理的控制，4G运行内存是完全够用的，甚至可以说，运行内存相对来说属于弹性需求。毕竟只要不是铁杆的游戏玩家，那么，
+										4G运行内存其实和6G运行内存并没有本质上的区别。而内存则是刚性需求。
+										毕竟随着app越来越大、越来越占据内存这点来看，内存大的手机，可以延缓一下被淘汰的周期，而内存小的手机，则很可能最先遭到淘汰。</p>
+								</div>
+								<!-- 查看上一条文章或下一条 -->
+								<div class="linkto">
+									<a href="know-phone-cpu.html" style="float: left;">查看上一条文章：智能手机中央处理器</a>
+									<a href="know-phone-rom.html" style="float: right;">查看下一条文章：智能手机内存</a>
+								</div>
+							</div>
+						</div>
+						<div class="col-md-1"></div>
+					</div>
+					<!-- 评论功能 -->
+					<div class="comment-area">
+						<!-- 操作的界面 -->
+						<form>
+							<div class="form-group">
+								<label for="area">评论:</label>
+								<textarea placeholder="说点什么吧..." class="form-control" id="area" cols="30" rows="10"></textarea>
+								<div class="row submit">
+									<div class="col-md-10"></div>
+									<div class="col-md-2">
+										<span class="useCount">0</span> <span>/</span> <span>200</span> <button class="btn btn-primary" id="send">发布</button>
+									</div>
+								</div>
+							</div> <!-- 微博内容列表 -->
+							<div class="contentList">
+								<ul> </ul>
+							</div>
+						</form>
+
+					</div>
+				</div>
+			</div>
+			<!-- 底部 -->
+			<div class="footer container-fluid">
+				<div class="container ">
+					<div class="beian">
+						<p>计算机硬件科普网</p>
+						<p>仅作为学习科普使用，无任何商业用途</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>

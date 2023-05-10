@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap.min.css" />
+		<script src="bootstrap/js/jquery-3.1.1.js" type="text/javascript" charset="utf-8"></script>
+		<script src="bootstrap/js/bootstrap.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/navtop.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/feedback.js" type="text/javascript" charset="utf-8"></script>
+		<link rel="stylesheet" type="text/css" href="css/history-of-computer.css" />
+		<link rel="stylesheet" type="text/css" href="font/bootstrap-icons.css" />
+		<title>计算机硬件科普网-GPU发展史</title>
+	</head>
+	<body>
+		<div id="app">
+			<div class="navtop container-fluid bg-light navbar-light ">
+				<nav class="container navbar navbar-expand-md ">
+					<!-- Brand -->
+					<a class="navbar-brand" href="#"><img src="img/logo.png"></a>
+
+					<!-- Toggler/collapsibe Button -->
+					<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+						<span class="navbar-toggler-icon"></span>
+					</button>
+					<!-- Navbar links -->
+					<div class="collapse navbar-collapse" id="collapsibleNavbar" style="margin-left: 50px;">
+						<ul class="navbar-nav">
+							<li class="nav-item">
+								<a class="nav-link" href="index.html">首页</a>
+							</li>
+							<li class="nav-item dropdown">
+								<a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">百科</a>
+								<div class="dropdown-menu">
+									<a class="dropdown-item" href="history-of-computer.html">计算机发展史</a>
+									<a class="dropdown-item" href="history-of-GPU.html">GPU发展史</a>
+									<a class="dropdown-item" href="history-of-CPU.html">CPU发展史</a>
+									<a class="dropdown-item" href="hardware.html">硬件百科</a>
+								</div>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link" href="news-center.html">新闻中心</a>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link" href="top.html">天梯图</a>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link" href="#" data-toggle="modal" data-target="#myModal">意见反馈</a>
+							</li>
+							<!-- 模态框 -->
+							<div class="modal fade" id="myModal">
+								<div class="modal-dialog">
+									<div class="modal-content">
+										<!-- 模态框头部 -->
+										<div class="modal-header">
+											<h4 class="modal-title">意见反馈&nbsp;<span class="small text-secondary" style="font-size: 12px;">您的意见对我们很有帮助</span></h4>
+											<button type="button" class="close" data-dismiss="modal">&times;</button>
+										</div>
+										<!-- 模态框主体 -->
+										<div class="modal-body">
+											<textarea class="form-control" rows="5" id="cmt"></textarea>
+										</div>
+										<!-- 模态框底部 -->
+										<div class="modal-footer">
+											<button type="button" class="btn btn-primary" id="ty">提交</button>
+											<button type="button" class="btn btn-secondary" data-dismiss="modal">关闭</button>
+										</div>
+									</div>
+								</div>
+							</div>
+							<li class="nav-item" id="login">
+								<a class="nav-link login" style="display: block;" href="login.html">登录</a>
+								<p class="nav-link user" style="display: none;"><i class="bi bi-person-circle"></i></p>
+							</li>
+
+							<li class="nav-item" id="register">
+								<a class="nav-link register" style="display: block;" href="register.html">注册</a>
+								<p class="nav-link logout" style="display: none;">登出</p>
+							</li>
+						</ul>
+					</div>
+				</nav>
+			</div>
+			<!-- 内容 -->
+			<div class="history container-fluid">
+				<div class="container">
+					<!-- 面包屑导航 -->
+					<nav class="breadcrumb">
+						<a class="breadcrumb-item" href="index.html">首页</a>
+						<a class="breadcrumb-item" href="history-of-GPU.html">图形处理器（GPU）发展史</a>
+					</nav>
+					<!-- 内容 -->
+					<div class="row">
+						<div class="col-md-8">
+							<div class="news-header">
+								<h1>GPU发展历史</h1>
+							</div>
+							<div class="news-span small text-secondary">
+								<span>[创建于：2022-4-22]</span>——<span>[最后更新日期：2022-4-28]</span>
+							</div>
+							<div class="el-col-offset-1 news-content">
+								<h4>前言：</h4>
+								<p>本文根据百度百科和知乎整理</p>
+								<h4>一、GPU概念的提出:</h4>
+								<div class="content">
+									<h5>1、20 世纪70 年代末和80 年代初</h5>
+									<p>GPU 概念在此时被提出，使用单片集成电路（monolithic）作为图形芯片，可以对几张图片进行合成但是仅限如此。</p>
+									<h5>2、20 世纪80 年代末到90 年代</h5>
+									<p>基于数字信号处理芯片（digital signal processor chip）的GPU 被研发出来，与前代相比速度更快、功能更强，但是价格极其昂贵。</p>
+									<img src="img/DSP.jpg" style="width: 100%;">
+								</div>
+								<h4>二、modern GPU的问世:</h4>
+								<div class="content">
+									<h5>1、modern GPU介绍</h5>
+									<p>modern GPU 使用晶体管（transistors）进行计算，在微芯片（microchip）中，GPU 所使用的晶体管已经远远超过CPU。</p>
+									<h5>2、第一代modern GPU特性</h5>
+									<p> 第一代modern GPU 可以独立于CPU 进行像素缓存区的更新，并可以光栅化三角面片以及进行纹理操作，但是缺乏三维顶点的空间坐标变换能力，这意味着“必须依赖于GPU执行顶点坐标变换的计算”。这一时期的GPU
+										功能非常有限，只能用于纹理组合的数学计算或者像素颜色值的计算。</p>
+									<img src="img/GPU-1.jpeg">
+									<h5>3、第二代modern GPU特性</h5>
+									<p>这一时期的GPU可以进行三维坐标转换和光照计算（3D Object Transformation and Lighting,T&L），并且OpenGL 和DirectX7
+										都提供了开发接口，支持应用程序使用基于硬件的坐标变换。这是一个非常重要的时期，在此之前只有高级工作站（workstation）的图形硬件才支持快速的顶点变换。同时，这一阶段的GPU
+										对于纹理的操作也扩展到了立方体纹理（cube map）。</p>
+									<h5>4、第三代modern GPU特性</h5>
+									<p>这一时期研发的GPU 提供vertexprogrammability（顶点编程能力），这些GPU 允许应用程序指定一个序列的指令进行顶点操作控制（GPU
+										编程的本质！），这同样是一个具有开创意义的时期，这一时期确立的GPU 编程思想一直延续到2009
+										年的今天，不但深入到工程领域帮助改善人类日常生活（医疗、地质勘探、游戏、电影等），而且开创或延伸了计算机科学的诸多研究领域 （体绘制、光照模拟、人群动画、通用计算等）。同时，Direct8 和OpenGL
+										都本着与时俱进的精神，提供了支持vertex programmability 的扩展。不过，这一时期的GPU 还不支持像素级的编程能力，即fragment
+										programmability（片段编程能力），在第四代modern GPU 时期，我们将迎来同时支持vertex programmability 和fragment programmability 的GPU。</p>
+									<h5>5、第四代modern GPU特性</h5>
+									<p>这个时期的GPU 都支持vertex 15programmability 和fragment programmability。同时DirectX 和OpenGL 也扩展了自身的API，用以支持vertex
+										programmability 和fragment programmability。</p>
+								</div>
+								<h4>三.图形卡发展的下一步主要是在专业领域。：</h4>
+								<div class="content">
+									<p>1947年，Bell实验室的William B. Shockley、John Bardeen和Walter H.
+										Brattain.发明了晶体管，开辟了电子时代新纪元。英特尔将他们的82720图形卡芯片用作价格为1000美元的iSBX
+										275视频图形卡控制器多模式板的基础。它能够以256x256的分辨率（或以512x512的单色）显示八种颜色数据。其32KB的显示内存足以绘制线，弧，圆，矩形和字符位图。该芯片还提供了缩放，屏幕分区和滚动的功能。</p>
+									<p>除了国防承包商以外，还有一些公司用专业图形卡跨越军事市场。</p>
+									<p>Evans＆Sutherland将提供诸如Freedom和REALimage之类的专业图形卡卡系列，还为CT5飞行模拟器提供了图形卡，CT5飞行模拟器由DEC
+										PDP-11大型机驱动，耗资2000万美元。该公司的共同创始人伊凡·萨瑟兰（Ivan Sutherland）于1961年开发了一个名为Sketchpad的计算机程序，该程序可以绘制几何形状并使用光笔在CRT上实时显示。</p>
+									<p>这是现代图形卡用户界面（GUI）的起源。</p>
+									<p>在不太重要的个人计算机领域中，Chips and Technologies的82C43x系列EGA（扩展图形卡适配器）为IBM适配器提供了急需的竞争，并且可以在1985年左右安装在许多PC /
+										AT克隆中。同时Commodore Amiga也安装了OCS芯片组。该芯片组由三个主要组件芯片-Agnus，Denise和Paula组成，它们允许一定数量的图形卡和音频计算，不依赖CPU。</p>
+									<p>1951年，UNIVAC-1：第一台商用计算机系统。设计者：J. Presper Eckert 和John Mauchly。</p>
+								</div>
+							</div>
+						</div>
+						<!-- 右侧推荐栏 -->
+						<div class="col-md-3 el-col-offset-1">
+							<h5>为您推荐</h5>
+							<div class="row">
+								<div class="col-md-12 img-thumbnail">
+									<img src="img/ch.jpeg">
+									<p>计算机发展史</p>
+									<button type="button" class="btn btn-primary"><a href="history-of-computer.html">了解更多</a></button>
+								</div>
+								<div class="col-md-12 img-thumbnail">
+									<img src="img/ph.jpeg">
+									<p>中央处理器（CPU）发展史</p>
+									<button type="button" class="btn btn-primary"><a href="history-of-CPU.html">了解更多</a></button>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- 底部 -->
+			<div class="footer container-fluid">
+				<div class="container ">
+					<div class="beian">
+						<p>计算机硬件科普网</p>
+						<p>仅作为学习科普使用，无任何商业用途</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>

@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap.min.css" />
+		<script src="bootstrap/js/jquery-3.1.1.js" type="text/javascript" charset="utf-8"></script>
+		<script src="bootstrap/js/bootstrap.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/feedback.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/navtop.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/comment.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/feedback.js" type="text/javascript" charset="utf-8"></script>
+		<link rel="stylesheet" type="text/css" href="css/history-of-computer.css" />
+		<link rel="stylesheet" type="text/css" href="font/bootstrap-icons.css" />
+		<title>计算机硬件科普网-图形处理器</title>
+	</head>
+	<body>
+		<div id="app">
+			<div class="navtop container-fluid bg-light navbar-light ">
+				<nav class="container navbar navbar-expand-md ">
+					<!-- Brand -->
+					<a class="navbar-brand" href="#"><img src="img/logo.png"></a>
+					<!-- Toggler/collapsibe Button -->
+					<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+						<span class="navbar-toggler-icon"></span>
+					</button>
+					<!-- Navbar links -->
+					<div class="collapse navbar-collapse" id="collapsibleNavbar" style="margin-left: 50px;">
+						<ul class="navbar-nav">
+							<li class="nav-item">
+								<a class="nav-link" href="index.html">首页</a>
+							</li>
+							<li class="nav-item dropdown">
+								<a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">百科</a>
+								<div class="dropdown-menu">
+									<a class="dropdown-item" href="history-of-computer.html">计算机发展史</a>
+									<a class="dropdown-item" href="history-of-GPU.html">GPU发展史</a>
+									<a class="dropdown-item" href="history-of-CPU.html">CPU发展史</a>
+									<a class="dropdown-item" href="hardware.html">硬件百科</a>
+								</div>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link" href="news-center.html">新闻中心</a>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link" href="top.html">天梯图</a>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link" href="#" data-toggle="modal" data-target="#myModal">意见反馈</a>
+							</li>
+							<!-- 模态框 -->
+							<div class="modal fade" id="myModal">
+								<div class="modal-dialog">
+									<div class="modal-content">
+										<!-- 模态框头部 -->
+										<div class="modal-header">
+											<h4 class="modal-title">意见反馈&nbsp;<span class="small text-secondary" style="font-size: 12px;">您的意见对我们很有帮助</span></h4>
+											<button type="button" class="close" data-dismiss="modal">&times;</button>
+										</div>
+										<!-- 模态框主体 -->
+										<div class="modal-body">
+											<textarea class="form-control" rows="5" id="cmt"></textarea>
+										</div>
+										<!-- 模态框底部 -->
+										<div class="modal-footer">
+											<button type="button" class="btn btn-primary" id="ty">提交</button>
+											<button type="button" class="btn btn-secondary" data-dismiss="modal">关闭</button>
+										</div>
+									</div>
+								</div>
+							</div>
+							<li class="nav-item" id="login">
+								<a class="nav-link login" style="display: block;" href="login.html">登录</a>
+								<p class="nav-link user" style="display: none;"><i class="bi bi-person-circle"></i></p>
+							</li>
+
+							<li class="nav-item" id="register">
+								<a class="nav-link register" style="display: block;" href="register.html">注册</a>
+								<p class="nav-link logout" style="display: none;">登出</p>
+							</li>
+						</ul>
+					</div>
+				</nav>
+			</div>
+			<div class="history container-fluid">
+				<div class="container">
+					<nav class="breadcrumb">
+						<!-- 面包屑导航 -->
+						<a class="breadcrumb-item" href="index.html">首页</a>
+						<a class="breadcrumb-item" href="hardware.html">硬件百科</a>
+						<a class="breadcrumb-item" href="know-GPU.html">图形处理器(GPU)</a>
+					</nav>
+					<!-- 内容 -->
+					<div class="row">
+						<div class="col-md-1"></div>
+						<div class="col-md-10">
+							<div class="news-header">
+								<h1>图形处理器</h1>
+							</div>
+							<div class="news-span small text-secondary">
+								<span>[创建于：2022-4-22]</span>——<span>[最后更新日期：2022-4-28]</span>
+							</div>
+							<div class="news-content">
+								<h4>GPU简介</h4>
+								<div class="content">
+									<p>图形处理器（英语：graphics processing
+										unit，缩写：GPU），又称显示核心、视觉处理器、显示芯片，是一种专门在个人电脑、工作站、游戏机和一些移动设备（如平板电脑、智能手机等）上做图像和图形相关运算工作的微处理器。</p>
+									<p>GPU使显卡减少了对CPU的依赖，并进行部分原本CPU的工作，尤其是在3D图形处理时GPU所采用的核心技术有硬件T&L（几何转换和光照处理）
+										、立方环境材质贴图和顶点混合、纹理压缩和凹凸映射贴图、双重纹理四像素256位渲染引擎等，而硬件T&L技术可以说是GPU的标志。GPU的生产商主要有NVIDIA和ATI。</p>
+								</div>
+								<div class="content">
+									<h5>温馨提示：</h5>
+									<p>如需了解gpu诞生的发展史，可前往《<a href="history-of-GPU.html">GPU发展史</a>》阅读</p>
+									<hr>
+									<p>一个光栅显示系统离不开图形处理器，图形处理器是图形系统结构的重要元件，是连接计算机和显示终端的纽带。</p>
+									<p>应该说有显示系统就有图形处理器(俗称显卡)，但是早期的显卡只包含简单的存储器和帧缓冲区，它们实际上只起了一个图形的存储和传递作用，一切操作都必须由CPU来控制。</p>
+									<p>这对于文本和一些简单的图形来说是足够的，但是当要处理复杂场景特别是一些真实感的三维场景，单靠这种系统是无法完成任务的。</p>
+									<p>所以后来发展的显卡都有图形处理的功能。它不单单存储图形，而且能完成大部分图形功能，这样就大大减轻了CPU的负担，提高了显示能力和显示速度。</p>
+									<p>随着电子技术的发展，显卡技术含量越来越高，功能越来越强，许多专业的图形卡已经具有很强的3D处理能力，而且这些3D图形卡也渐渐地走向个人计算机。</p>
+									<p>一些专业显卡具有的晶体管数甚至比同时代的CPU的晶体管数还多。比如2000年加拿大ATI公司推出的 RADEON显卡芯片含有3千万颗晶体管，达到每秒15亿个象素填写率。</p>
+									<p>1989 年发布的80486处理器实现了5级标量流水线，标志着CPU的初步成熟，也标志着传统处理器发展阶段的结束。</p>
+								</div>
+								<h4>主要问题</h4>
+								<div class="content">
+									<h5>计算能力和计算模式方面的问题</h5>
+									<p>当前 GPU 的基础 ———传统 Z-buffer 算法不能满足新的应用需求。在实时图形和视频应用中 ，需要更强大的通用计算能力 ，比如支持碰撞检测、近似物理模拟；
+										在游戏中需要图形处理算法与人工智能和场景管理等非图形算法相结合。</p>
+									<p>当前的GPU 的体系结构不能很好地解决电影级图像质量需要解决的透明性、高质量反走样、
+										运动模糊、景深和微多边形染色等问题 ，不能很好的支持实时光线跟踪、Reyes(Renders everything you ever saw) 等更加复杂的图形算法 ，
+										也难以应对高质量的实时3D图形需要的全局光照、动态和实时显示以及阴影和反射等问题。需要研究新一代的 GPU 体系结构突破这些限制。</p>
+									<p>随着 VLSI 技术的飞速发展 ，新一代 GPU芯片应当具有更强大的计算能力 ，可以大幅度提高图形分辨率、场景细节 (更多的三角形和纹理细节)和全局近似度。
+										图形处理系统发展的趋势是图形和非图形算法的融合以及现有的不同染色算法的融合。</p>
+									<p>新一代的图形系统芯片需要统一灵活的数据结构、新的程序设计模型、多种并行计算模式。
+										我们认为发展的趋势是在统一的、规则并行处理元阵列结构上 ，用数据级并行、操作级并行和任务级并行的统一计算模式来解决当前图形处理系统芯片面临的问题。</p>
+									<h5>制造工艺方面的问题</h5>
+									<p>集成电路发展到纳米级工艺 ，不断逼近物理极限 ，出现了所谓红墙问题：一是线的延迟比门的延迟越来越重要。长线不仅有传输延迟问题 ， 而且还有能耗问题。</p>
+									<p>二是特征尺寸已小到使芯片制造缺陷不可避免 ，要从缺陷容忍、故障容忍与差错容忍等三个方面研究容错与避错技术。三是漏电流和功耗变得非常重要 ，要采用功耗的自主管理技术。</p>
+									<p>现代的图形处理器芯片在克服红墙问题的几个方面有了显著的进步：利用了大量的规则的 SIMD 阵列结构；它的分布存储器接近了运算单元 ，减少了长线影响；它的硬件多线程掩盖了部分存储延迟的影响。</p>
+									<p>但是随着工艺进一步发展 ，当前 GPU 的体系结构难以适应未来工艺发展 ，没有在体系结构上应对长线问题、工艺偏差和工艺缺陷问题的措施 ，特别是没有考虑如何适应三维工艺。</p>
+									<p>当前最先进工艺的晶体管的栅极厚度已经大约是五个原子，在制造时，少了一个原子就造成20 %的工艺偏差。因此工艺的偏差成为SoC设计不能不考虑的问题。</p>
+									<p>特别是到 2018 年后的纳电子集成电路 ，可以通过随机自组装产生规则的纳米器件。因此，新一代系统芯片的体系结构必须利用规则的结构并且容忍工艺偏差 ，具有容错、避错和重组的能力。</p>
+									<p>我们认为采用大量同构处理器元之间的邻接技术 ，适应纳米级工艺和未来的三维工艺 ，采用新型体系结构和相关的低功耗、容错和避错的设计策略 ，对于未来的图形处理系统芯片具有重要的科学意义。</p>
+								</div>
+								<h4>供应商</h4>
+								<div class="content">
+									<h5>ATI</h5>
+									<p>1985年8月20日ATI公司成立，同年10月ATI使用ASIC技术开发出了第一款图形芯片和图形卡，1992年4月ATI发布了Mach32图形卡集成了图形加速功能，1998年4月ATI被IDC评选为图形芯片工业的市场领导者，
+										但那时这种芯片还没有GPU的称号，很长的一段时间ATI都是把图形处理器称为VPU，直到AMD收购ATI之后其图形芯片才正式采用GPU的名字。</p>
+									<h5>NVIDIA</h5>
+									<p>NVIDIA公司在1999年发布 Geforce256图形处理芯片时首先提出GPU的概念。从此 NVIDIA显卡的芯就用GPU来称呼。
+										GPU使显卡减少了对CPU的依赖，并进行部分原本CPU的工作，尤其是在3D图形处理时。
+										GPU所采用的核心技术有硬体T&L、立方环境材质贴图和顶点混合、纹理压缩和凹凸映射贴图、双重纹理四像素256位渲染引擎等，
+										而硬体T&L技术可以说是GPU的标志。</p>
+								</div>
+								<!-- 查看上一条文章或下一条 -->
+								<div class="linkto">
+									<a href="#" style="float: left;">查看上一条文章：无</a>
+									<a href="know-CPU.html" style="float: right;">查看下一条文章：中央处理器</a>
+								</div>
+							</div>
+						</div>
+						<div class="col-md-1"></div>
+					</div>
+					<!-- 评论功能 -->
+					<div class="comment-area">
+						<!-- 操作的界面 -->
+						<form>
+							<div class="form-group">
+								<label for="area">评论:</label>
+								<textarea placeholder="说点什么吧..." class="form-control" id="area" cols="30" rows="10"></textarea>
+								<div class="row submit">
+									<div class="col-md-10"></div>
+									<div class="col-md-2">
+										<span class="useCount">0</span> <span>/</span> <span>200</span> <button class="btn btn-primary" id="send">发布</button>
+									</div>
+								</div>
+							</div> <!-- 微博内容列表 -->
+							<div class="contentList">
+								<ul> </ul>
+							</div>
+						</form>
+
+					</div>
+				</div>
+			</div>
+			<!-- 底部 -->
+			<div class="footer container-fluid">
+				<div class="container ">
+					<div class="beian">
+						<p>计算机硬件科普网</p>
+						<p>仅作为学习科普使用，无任何商业用途</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>

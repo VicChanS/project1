@@ -1,0 +1,51 @@
+* {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	text-decoration: none;
+}
+
+
+a:hover {
+	text-decoration: none;
+}
+
+
+
+
+.logosearch {
+	display: flex;
+	margin-top: 30px;
+}
+
+
+.logosearch .form-inline {
+	margin-top: 20px;
+	padding-left: 90px;
+}
+
+
+.logosearch .form-inline .btn {
+	margin-left: 20px;
+}
+
+
+.primarynav {
+	margin-top: 20px;
+	background-color: #00acf5;
+}
+
+.top .list-group .list-group-item img {
+	width: 100%;
+}
+
+.footer {
+	padding-bottom: 20px;
+	background-color: #f8f9fa;
+	border-top: 2px solid #f0f0f0;
+}
+
+.beian p {
+	margin-top: 20px;
+	text-align: center;
+}

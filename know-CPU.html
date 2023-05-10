@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap.min.css" />
+		<script src="bootstrap/js/jquery-3.1.1.js" type="text/javascript" charset="utf-8"></script>
+		<script src="bootstrap/js/bootstrap.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/feedback.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/navtop.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/comment.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/navtop.js" type="text/javascript" charset="utf-8"></script>
+		<link rel="stylesheet" type="text/css" href="css/history-of-computer.css" />
+		<link rel="stylesheet" type="text/css" href="font/bootstrap-icons.css" />
+		<title>计算机硬件科普网-中央处理器</title>
+	</head>
+	<body>
+		<div id="app">
+			<div class="navtop container-fluid bg-light navbar-light ">
+				<nav class="container navbar navbar-expand-md ">
+					<!-- Brand -->
+					<a class="navbar-brand" href="#"><img src="img/logo.png"></a>
+					<!-- Toggler/collapsibe Button -->
+					<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+						<span class="navbar-toggler-icon"></span>
+					</button>
+					<!-- Navbar links -->
+					<div class="collapse navbar-collapse" id="collapsibleNavbar" style="margin-left: 50px;">
+						<ul class="navbar-nav">
+							<li class="nav-item">
+								<a class="nav-link" href="index.html">首页</a>
+							</li>
+							<li class="nav-item dropdown">
+								<a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">百科</a>
+								<div class="dropdown-menu">
+									<a class="dropdown-item" href="history-of-computer.html">计算机发展史</a>
+									<a class="dropdown-item" href="history-of-GPU.html">GPU发展史</a>
+									<a class="dropdown-item" href="history-of-CPU.html">CPU发展史</a>
+									<a class="dropdown-item" href="hardware.html">硬件百科</a>
+								</div>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link" href="news-center.html">新闻中心</a>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link" href="top.html">天梯图</a>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link" href="#" data-toggle="modal" data-target="#myModal">意见反馈</a>
+							</li>
+							<!-- 模态框 -->
+							<div class="modal fade" id="myModal">
+								<div class="modal-dialog">
+									<div class="modal-content">
+										<!-- 模态框头部 -->
+										<div class="modal-header">
+											<h4 class="modal-title">意见反馈&nbsp;<span class="small text-secondary" style="font-size: 12px;">您的意见对我们很有帮助</span></h4>
+											<button type="button" class="close" data-dismiss="modal">&times;</button>
+										</div>
+										<!-- 模态框主体 -->
+										<div class="modal-body">
+											<textarea class="form-control" rows="5" id="cmt"></textarea>
+										</div>
+										<!-- 模态框底部 -->
+										<div class="modal-footer">
+											<button type="button" class="btn btn-primary" id="ty">提交</button>
+											<button type="button" class="btn btn-secondary" data-dismiss="modal">关闭</button>
+										</div>
+									</div>
+								</div>
+							</div>
+							<li class="nav-item" id="login">
+								<a class="nav-link login" style="display: block;" href="login.html">登录</a>
+								<p class="nav-link user" style="display: none;"><i class="bi bi-person-circle"></i></p>
+							</li>
+
+							<li class="nav-item" id="register">
+								<a class="nav-link register" style="display: block;" href="register.html">注册</a>
+								<p class="nav-link logout" style="display: none;">登出</p>
+							</li>
+						</ul>
+					</div>
+				</nav>
+			</div>
+			<div class="history container-fluid">
+				<div class="container">
+					<!-- 面包屑导航 -->
+					<nav class="breadcrumb">
+						<a class="breadcrumb-item" href="index.html">首页</a>
+						<a class="breadcrumb-item" href="hardware.html">硬件百科</a>
+						<a class="breadcrumb-item" href="know-CPU.html">中央处理器(CPU)</a>
+					</nav>
+					<div class="row">
+						<div class="col-md-1"></div>
+						<div class="col-md-10">
+							<div class="news-header">
+								<h1>中央处理器(CPU)</h1>
+							</div>
+							<div class="news-span small text-secondary">
+								<span>[创建于：2022-4-22]</span>——<span>[最后更新日期：2022-4-28]</span>
+							</div>
+							<div class="news-content">
+								<h4>CPU简介</h4>
+								<div class="content">
+									<p>中央处理器（central processing unit，简称CPU）作为计算机系统的运算和控制核心，是信息处理、程序运行的最终执行单元。CPU自产生以来，在逻辑结构、运行效率以及功能外延上取得了巨大发展。</p>
+								</div>
+								<h4>发展历史</h4>
+								<div class="content">
+									<h5>观前提醒</h5>
+									<p>如需了解cpu诞生的发展史，可前往《<a href="history-of-CPU.html">CPU发展史</a>》阅读</p>
+									<hr>
+									<p>CPU出现于大规模集成电路时代，处理器架构设计的迭代更新以及集成电路工艺的不断提升促使其不断发展完善。从最初专用于数学计算到广泛应用于通用计算，
+										从4位到8位、16位、32位处理器，最后到64位处理器，从各厂商互不兼容到不同指令集架构规范的出现，CPU 自诞生以来一直在飞速发展。</p>
+									<p>CPU发展已经有40多年的历史了。我们通常将其分成六个阶段。</p>
+									<h5>第一阶段(1971年-1973年)</h5>
+									<p>这是4位和8位低档微处理器时代，代表产品是Intel 4004处理器。1971年，Intel生产的4004微处理器将运算器和控制器集成在一个芯片上，标志着CPU的诞生；
+										1978年，8086处理器的出现奠定了X86指令集架构， 随后8086系列处理器被广泛应用于个人计算机终端、高性能服务器以及云服务器中。</p>
+									<h5>第二阶段(1974年-1977年)</h5>
+									<p>这是8位中高档微处理器时代，代表产品是Intel 8080。此时指令系统已经比较完善了。</p>
+									<h5>第三阶段(1978年-1984年)</h5>
+									<p>这是16位微处理器的时代，代表产品是Intel 8086。相对而言已经比较成熟了。</p>
+									<h5>第四阶段(1985年-1992年)</h5>
+									<p>这是32位微处理器时代，代表产品是Intel 80386。已经可以胜任多任务、多用户的作业。</p>
+									<p>1989 年发布的80486处理器实现了5级标量流水线，标志着CPU的初步成熟，也标志着传统处理器发展阶段的结束。</p>
+									<h5>第五阶段(1993年-2005年)</h5>
+									<p>这是奔腾系列微处理器的时代。</p>
+									<p>1995 年11 月，Intel发布了Pentium处理器，该处理器首次采用超标量指令流水结构，引入了指令的乱序执行和分支预测技术，大大提高了处理器的性能，
+										因此，超标量指令流水线结构一直被后续出现的现代处理器，如AMD（Advanced Micro devices）的锐龙、Intel的酷睿系列等所采用。</p>
+									<h5>第六阶段(2005年至2021年)</h5>
+									<p>处理器逐渐向更多核心，更高并行度发展。典型的代表有英特尔的酷睿系列处理器和AMD的锐龙系列处理器。</p>
+								</div>
+								<h4>核心部分</h4>
+								<div class="content">
+									<h5>运算器</h5>
+									<p>运算器是指计算机中进行各种算术和逻辑运算操作的部件，其中算术逻辑单元是中央处理核心的部分。</p>
+									<p>（1）算术逻辑单元（ALU）。算术逻辑单元是指能实现多组 算术运算与逻辑运算的组合逻辑电路，其是中央处理中的重要组成部分。
+										算术逻辑单元的运算主要是进行二位元算术运算，如加法、减法、乘法。在运算过程中，算术逻辑单元主要是以计算机指令集中执行算术与逻辑操作，
+										通常来说，ALU能够发挥直接读入读出的作用，具体体现在处理器控制器、内存及输入输出设备等方面，输入输出是建立在总线的基础上实施。输入指令包含一 个指令字，其中包括操作码、格式码等。
+									</p>
+									<p>（2）中间寄存器（IR）。其长度为 128 位，其通过操作数来决定实际长度。IR 在“进栈并取数”指令中发挥重要作用，在执行该指令过程中，将ACC的内容发送于IR，之后将操作数取到ACC，后将IR内容进栈。</p>
+									<p>（3）运算累加器（ACC）。当前的寄存器一般都是单累加器，其长度为128位。对于ACC来说，可以将它看成可变长的累加器。
+										在叙述指令过程中，ACC长度的表示一般都是将ACS的值作为依据，而ACS长度与 ACC 长度有着直接联系，ACS长度的加倍或减半也可以看作ACC长度加倍或减半。</p>
+									<p>（4）描述字寄存器（DR）。其主要应用于存放与修改描述字中。DR的长度为64位，为了简化数据结构处理，使用描述字发挥重要作用。</p>
+									<p>（5）B寄存器。其在指令的修改中发挥重要作用，B 寄存器长度为32位，在修改地址过程中能保存地址修改量，主存地址只能用描述字进行修改。
+										指向数组中的第一个元素就是描述字， 因此，访问数组中的其它元素应当需要用修改量。对于数组成来说，其是由大小一样的数据或者大小相同的元素组成的，
+										且连续存储，常见的访问方式为向量描述字，因为向量描述字中的地址为字节地址，所以，在进行换算过程中，首先应当进行基本地址的相加。
+										对于换算工作来说，主要是由硬件自动实现，在这个过程中尤其要注意对齐，以免越出数组界限。</p>
+									<h5>控制器</h5>
+									<p>控制器是指按照预定顺序改变主电路或控制电路的接线和 改变电路中电阻值来控制电动机的启动、调速、制动与反向的主令装置。
+										控制器由程序状态寄存器PSR，系统状态寄存器SSR， 程序计数器PC，指令寄存器等组成，其作为“决策机构”，
+										主要任务就是发布命令，发挥着整个计算机系统操作的协调与指挥作用。 控制的分类主要包括两种，分别为组合逻辑控制器、微程序控制器，
+										两个部分都有各自的优点与不足。其中组合逻辑控制器结构相对较复杂，但优点是速度较快；微程序控制器设计的结构简单，但在修改一条机器指令功能中，需对微程序的全部重编。</p>
+								</div>
+								<h4>未来发展</h4>
+								<div class="content">
+									<p>通用中央处理器(CPU)芯片是信息产业的基础部件，也是武器装备的核心器件。我国缺少具有自主知识产权的CPU技术和产业，不仅造成信息 产业受制于人，而且国家安全也难以得到全面保障。
+										“十五”期间，国家“863计划”开始支持自主研发 CPU。“十一五”期间，“核心电子器件、高端通用芯片及基础软件产品”(“核高基”)重大专项将“863计 划”中的CPU成果引入产业。
+										从“十二五”开始，我国在多个领域进行自主研发CPU的应用和试点，在一定范围内形成了自主技术和产业体系，可满足武器装备、信息化等领域的应用需求。
+										但国外CPU垄断已久，我国自主研发CPU产品和市场的成熟还需要一定时间。</p>
+								</div>
+								<!-- 查看上一条文章或下一条 -->
+								<div class="linkto">
+									<a href="know-GPU.html" style="float: left;">查看上一条文章：图形处理器</a>
+									<a href="know-memory-disk.html" style="float: right;">查看下一条文章：电脑内存</a>
+								</div>
+							</div>
+						</div>
+						<div class="col-md-1"></div>
+					</div>
+					<!-- 评论功能 -->
+					<div class="comment-area">
+						<!-- 操作的界面 -->
+						<form>
+							<div class="form-group">
+								<label for="area">评论:</label>
+								<textarea placeholder="说点什么吧..." class="form-control" id="area" cols="30" rows="10"></textarea>
+								<div class="row submit">
+									<div class="col-md-10"></div>
+									<div class="col-md-2">
+										<span class="useCount">0</span> <span>/</span> <span>200</span> <button class="btn btn-primary" id="send">发布</button>
+									</div>
+								</div>
+							</div> <!-- 微博内容列表 -->
+							<div class="contentList">
+								<ul> </ul>
+							</div>
+						</form>
+
+					</div>
+				</div>
+			</div>
+			<!-- 底部 -->
+			<div class="footer container-fluid">
+				<div class="container ">
+					<div class="beian">
+						<p>计算机硬件科普网</p>
+						<p>仅作为学习科普使用，无任何商业用途</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>

@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap.min.css" />
+		<script src="bootstrap/js/jquery-3.1.1.js" type="text/javascript" charset="utf-8"></script>
+		<script src="bootstrap/js/bootstrap.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/feedback.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/navtop.js" type="text/javascript" charset="utf-8"></script>
+		<link rel="stylesheet" type="text/css" href="css/history-of-computer.css" />
+		<link rel="stylesheet" type="text/css" href="font/bootstrap-icons.css" />
+		<title>计算机硬件科普网-计算机发展史</title>
+	</head>
+	<body>
+		<div id="app">
+			<div class="navtop container-fluid bg-light navbar-light ">
+				<nav class="container navbar navbar-expand-md ">
+					<!-- Brand -->
+					<a class="navbar-brand" href="#"><img src="img/logo.png"></a>
+
+					<!-- Toggler/collapsibe Button -->
+					<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+						<span class="navbar-toggler-icon"></span>
+					</button>
+
+					<!-- Navbar links -->
+					<div class="collapse navbar-collapse" id="collapsibleNavbar" style="margin-left: 50px;">
+						<ul class="navbar-nav">
+							<li class="nav-item">
+								<a class="nav-link" href="index.html">首页</a>
+							</li>
+							<li class="nav-item dropdown">
+								<a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">百科</a>
+								<div class="dropdown-menu">
+									<a class="dropdown-item" href="history-of-computer.html">计算机发展史</a>
+									<a class="dropdown-item" href="history-of-GPU.html">GPU发展史</a>
+									<a class="dropdown-item" href="history-of-CPU.html">CPU发展史</a>
+									<a class="dropdown-item" href="hardware.html">硬件百科</a>
+								</div>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link" href="news-center.html">新闻中心</a>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link" href="top.html">天梯图</a>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link" href="#" data-toggle="modal" data-target="#myModal">意见反馈</a>
+							</li>
+							<!-- 模态框 -->
+							<div class="modal fade" id="myModal">
+								<div class="modal-dialog">
+									<div class="modal-content">
+										<!-- 模态框头部 -->
+										<div class="modal-header">
+											<h4 class="modal-title">意见反馈&nbsp;<span class="small text-secondary" style="font-size: 12px;">您的意见对我们很有帮助</span></h4>
+											<button type="button" class="close" data-dismiss="modal">&times;</button>
+										</div>
+										<!-- 模态框主体 -->
+										<div class="modal-body">
+											<textarea class="form-control" rows="5" id="cmt"></textarea>
+										</div>
+										<!-- 模态框底部 -->
+										<div class="modal-footer">
+											<button type="button" class="btn btn-primary" id="ty">提交</button>
+											<button type="button" class="btn btn-secondary" data-dismiss="modal">关闭</button>
+										</div>
+									</div>
+								</div>
+							</div>
+							<li class="nav-item" id="login">
+								<a class="nav-link login" style="display: block;" href="login.html">登录</a>
+								<p class="nav-link user" style="display: none;"><i class="bi bi-person-circle"></i></p>
+							</li>
+
+							<li class="nav-item" id="register">
+								<a class="nav-link register" style="display: block;" href="register.html">注册</a>
+								<p class="nav-link logout" style="display: none;">登出</p>
+							</li>
+						</ul>
+					</div>
+				</nav>
+			</div>
+			<div class="history container-fluid">
+				<div class="container">
+					<!-- 面包屑导航 -->
+					<nav class="breadcrumb">
+						<a class="breadcrumb-item" href="index.html">首页</a>
+						<a class="breadcrumb-item" href="history-of-computer.html">计算机发展史</a>
+					</nav>
+					<div class="row">
+						<!-- 内容 -->
+						<div class="col-md-8">
+							<div class="news-header">
+								<h1>计算机发展史</h1>
+							</div>
+							<div class="news-span small text-secondary">
+								<span>[创建于：2022-4-25]</span>——<span>[最后更新日期：2022-4-30]</span>
+							</div>
+							<div class="el-col-offset-1 news-content">
+								<h4>前言：</h4>
+								<p>本文根据百度百科和知乎整理</p>
+								<h4>一.早期计算机：</h4>
+								<div class="content">
+									<p>在公元前5世纪中国人发明了算盘，算盘相当于是最早的计算机。算盘可能在某些方面的运算能力要超过目前的计算机。</p>
+									<p>直到1642年，法国人Blaise Pascal发明了自动进位加法器，称为Pascalene。</p>
+									<p>1694年，德国数学家Gottfried Wilhemvon Leibniz改进了Pascaline，使之可以计算乘法。</p>
+									<p>后来，法国人Charles Xavier Thomas de Colmar发明了可以进行四则运算的计算器。</p>
+								</div>
+								<h4>二.计算机发展史：</h4>
+								<div class="content">
+									<p>在计算机的发展史中，“计算机之父”的称号，一直在阿兰·图灵和冯·诺依曼之间徘徊。但是有一点是毋庸置疑的，在所有讲述计算机发端的故事里，一定是从 19 世纪的一位英国发明家查尔斯·巴贝奇讲起的。</p>
+									<p>巴贝奇最早提出建造强大计算机器的想法。1823 年，巴贝奇在政府的支持下，启动了制造差分机（Difference Engine）的项目。尽管最终失败，但是这是人类第一次尝试制造大型计算机的开始。阿兰·图灵曾经在
+										1953 年设计了自动计算机（Automatic Computing Engine），选用“Engine”这个词就是为了向查尔斯·巴贝奇致敬。</p>
+									<p>1906年，美国的Lee De Forest发明了电子管。在这之前造出数字电子计算机是不可能的。这为电子计算机的发展奠定了基础。 　</p>
+									<p>1937年，英国剑桥大学的Alan M. Turing提出了被后人称之为"图灵机"的数学模型。同年，BELL试验室的George Stibitz展示了用继电器表示二进制的装置，这是第一台二进制电子计算机。
+										1939年11月，美国John V. Atanasoff和他的学生Clifford Berry完成了一台16位的加法器，这是第一台真空管计算机。</p>
+									<p>在二次世界大战中，军事需要大大促进了计算机技术的发展。</p>
+									<p>1940年1月， Bell实验室的Samuel Williams和Stibitz制造成功了一个能进行复杂运算的计算机。大量使用了继电器，并借鉴了一些电话技术，使用了先进的编码技术。</p>
+									<p>1941夏，Atanasoff和学生Berry完成了能解线性代数方程的计算机，取名叫"ABC"（Atanasoff-Berry Computer），完成一次加法运算用时一秒。</p>
+									<p>1941年12月，德国Zuse制作完成了Z3计算机的研制，这是第一台可编程的电子计算机。</p>
+									<p>1943年到1959年时期的计算机通常被称作第一代计算机。</p>
+									<img src="img/hoc.jpeg" style="width: 100%;">
+									<p>1943年1月，Mark I，自动顺序控制计算机在美国研制成功，被用来为美国海军计算弹道火力表。</p>
+									<p>1943年4月，Max Newman、Wynn-Williams和他们的研究小组研制成功"Heath Robinson"，这是一台密码破译机。</p>
+									<p>同年9月，Williams和Stibitz完成了"Relay Interpolator"，后来命名为"Model II Relay Calculator"。这是一台可编程计算机。</p>
+									<h5>ENIAC:</h5>
+									<p>1946年，冯 · 诺依曼提出计算机的基本原理：存储程序和程序控制。</p>
+									<ul>
+										<li>由二进制代替十进制思想</li>
+										<li>采用存储程序思想</li>
+										<li>从逻辑分为CPU(运算器，控制器)，存储器，输入设备，输出设备</li>
+									</ul>
+									<p>同年第一台计算机ENIAC (埃尼阿克(Electronic Numerical Integrator And
+										Calculator)),在美国宾夕法尼亚大学现世并正式投入运行，参与研制工作的是宾夕法尼亚大学莫尔电机工程学院的莫克莱和埃克特为首的研制小组。</p>
+									<p>冯诺依曼并没有参加 ENIAC 的研制，而是在了解到 ENIAC 项目后，在其基础上带领 ENIAC 的原班人马研制了 EDVAC，重新设计了整个架构，从而奠定了当今所有计算机的结构，从而开始采用二进制进行运算。</p>
+									<p>ENIAC重30吨，使用了约18800个真空电子管，功率达174千瓦，占地约140平方米，使用十进制运算，每秒能运算5000次加法，但是它不像现在这样的电脑有输入控制设备，只能通过人工来扳动庞大面板上的各种开关来进行数据信息输入。</p>
+									<p>虽然现在看来它真的很落后，但是在当时它代表着人类计算技术的最高成就，它奠定了电子计算机的发展基础，开辟了信息时代。</p>
+								</div>
+								<h4>三.晶体管计算机的发展：</h4>
+								<div class="content">
+									<p>1947年，Bell实验室的William B. Shockley、John Bardeen和Walter H. Brattain.发明了晶体管，开辟了电子时代新纪元。</p>
+									<p>1949年，EDSAC，剑桥大学的Wilkes和他的小组建成了一台存储程序的计算机。输入输出设备仍是纸带。</p>
+									<p>1949年,EDVAC (electronic discrete variable computer),第一台使用磁带的计算机.这台机器是John von Neumann提议建造的。</p>
+									<p>1950年，软磁盘由东京帝国大学的Yoshiro Nakamats发明。其销售权由IBM公司获得。开创存储时代新纪元。</p>
+									<p>同年，英国数学家和计算机先驱Alan Turing说：计算机将会具有人的智慧，如果一个人和一台机器对话，对于提出和回答的问题，这个人不能区别到底对话的是机器还是人，那么这台机器就具有了人的智能。</p>
+									<p>1951年，UNIVAC-1：第一台商用计算机系统。设计者：J. Presper Eckert 和John Mauchly。</p>
+									<img src="img/hoc-1.jpeg" style="width: 100%;">
+									<p>1952年，EDVAC (Electronic Discrete Variable Computer)：由Von Neumann领导设计并完成。 取名：电子离散变量计算机。</p>
+									<p>1953年，磁芯存储器被开发出来。 　</p>
+									<p>1954年，IBM的John Backus和他的研究小组开始开发 FORTRAN (FORmula TRANslation)，这是一种适合科学研究使用的计算机高级语言。</p>
+									<p>1956: 第一次有关人工智能的会议在Dartmouth 学院召开。</p>
+									<p>1957: IBM开发成功第一台点阵打印机。</p>
+									<p>1957: FORTRAN 高级语言开发成功。</p>
+								</div>
+							</div>
+						</div>
+						<!-- 右侧推荐栏 -->
+						<div class="col-md-3 el-col-offset-1">
+							<h5>为您推荐</h5>
+							<div class="row">
+								<div class="col-md-12 img-thumbnail">
+									<img src="img/gpu.jpeg">
+									<p>图形处理器（GPU）发展史</p>
+									<button type="button" class="btn btn-primary"><a href="history-of-GPU.html">了解更多</a></button>
+								</div>
+								<div class="col-md-12 img-thumbnail">
+									<img src="img/ph.jpeg">
+									<p>中央处理器（CPU）发展史</p>
+									<button type="button" class="btn btn-primary"><a href="history-of-CPU.html">了解更多</a></button>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- 底部 -->
+			<div class="footer container-fluid">
+				<div class="container ">
+					<div class="beian">
+						<p>计算机硬件科普网</p>
+						<p>仅作为学习科普使用，无任何商业用途</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</body>
+
+	<script>
+		new Vue({
+			el: '#app',
+			data() {
+				return {}
+			},
+		})
+	</script>
+</html>

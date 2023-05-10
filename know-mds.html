@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap.min.css" />
+		<script src="bootstrap/js/jquery-3.1.1.js" type="text/javascript" charset="utf-8"></script>
+		<script src="bootstrap/js/bootstrap.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/feedback.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/navtop.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/comment.js" type="text/javascript" charset="utf-8"></script>
+		<link rel="stylesheet" type="text/css" href="css/history-of-computer.css" />
+		<link rel="stylesheet" type="text/css" href="font/bootstrap-icons.css" />
+		<title>计算机硬件科普网-计算机发展史</title>
+	</head>
+	<body>
+		<div id="app">
+			<div class="navtop container-fluid bg-light navbar-light ">
+				<nav class="container navbar navbar-expand-md ">
+					<!-- Brand -->
+					<a class="navbar-brand" href="#"><img src="img/logo.png"></a>
+					<!-- Toggler/collapsibe Button -->
+					<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+						<span class="navbar-toggler-icon"></span>
+					</button>
+
+					<!-- Navbar links -->
+					<div class="collapse navbar-collapse" id="collapsibleNavbar" style="margin-left: 50px;">
+						<ul class="navbar-nav">
+							<li class="nav-item">
+								<a class="nav-link" href="index.html">首页</a>
+							</li>
+							<li class="nav-item dropdown">
+								<a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">百科</a>
+								<div class="dropdown-menu">
+									<a class="dropdown-item" href="history-of-computer.html">计算机发展史</a>
+									<a class="dropdown-item" href="history-of-GPU.html">GPU发展史</a>
+									<a class="dropdown-item" href="history-of-CPU.html">CPU发展史</a>
+									<a class="dropdown-item" href="hardware.html">硬件百科</a>
+								</div>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link" href="news-center.html">新闻中心</a>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link" href="top.html">天梯图</a>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link" href="#" data-toggle="modal" data-target="#myModal">意见反馈</a>
+							</li>
+							<!-- 模态框 -->
+							<div class="modal fade" id="myModal">
+								<div class="modal-dialog">
+									<div class="modal-content">
+										<!-- 模态框头部 -->
+										<div class="modal-header">
+											<h4 class="modal-title">意见反馈&nbsp;<span class="small text-secondary" style="font-size: 12px;">您的意见对我们很有帮助</span></h4>
+											<button type="button" class="close" data-dismiss="modal">&times;</button>
+										</div>
+										<!-- 模态框主体 -->
+										<div class="modal-body">
+											<textarea class="form-control" rows="5" id="cmt"></textarea>
+										</div>
+										<!-- 模态框底部 -->
+										<div class="modal-footer">
+											<button type="button" class="btn btn-primary" id="ty">提交</button>
+											<button type="button" class="btn btn-secondary" data-dismiss="modal">关闭</button>
+										</div>
+									</div>
+								</div>
+							</div>
+							<li class="nav-item" id="login">
+								<a class="nav-link login" style="display: block;" href="login.html">登录</a>
+								<p class="nav-link user" style="display: none;"><i class="bi bi-person-circle"></i></p>
+							</li>
+
+							<li class="nav-item" id="register">
+								<a class="nav-link register" style="display: block;" href="register.html">注册</a>
+								<p class="nav-link logout" style="display: none;">登出</p>
+							</li>
+						</ul>
+					</div>
+				</nav>
+			</div>
+			<div class="history container-fluid">
+				<div class="container">
+					<nav class="breadcrumb">
+						<!-- 面包屑导航 -->
+						<a class="breadcrumb-item" href="index.html">首页</a>
+						<a class="breadcrumb-item" href="hardware.html">硬件百科</a>
+						<a class="breadcrumb-item" href="know-mds.html">电脑储存盘</a>
+					</nav>
+					<!-- 内容 -->
+					<div class="row">
+						<div class="col-md-1"></div>
+						<div class="col-md-10">
+							<div class="news-header">
+								<h1>电脑储存盘</h1>
+							</div>
+							<div class="news-span small text-secondary">
+								<span>[创建于：2022-4-22]</span>——<span>[最后更新日期：2022-4-27]</span>
+							</div>
+							<div class="news-content">
+								<h4>前言</h4>
+								<div class="content">
+									<p>电脑的储存盘可划分为早期的软盘(FD)已被时代所淘汰,与现今的机械硬盘(HDD)与固态硬盘(SSD)。</p>
+								</div>
+								<h4>软盘</h4>
+								<div class="content">
+									<p>软盘（Floppy Disk）是个人计算机（PC）中最早使用的可移介质。软盘的读写是通过软盘驱动器完成的。
+										软盘驱动器设计能接收可移动式软盘，常用的就是容量为1.44MB的3.5英寸软盘，它曾经盛极一时。之后由于U盘的出现，软盘的应用逐渐衰落直至淘汰</p>
+									<p>软盘是个人电脑设备中，最早使用可移动备份存储设备。软盘有八寸、五又四分一寸、三寸半之分，分为硬磁区及软磁区。软盘片是覆盖磁性涂料的塑料片，用来储存数据文件。</p>
+									<img src="img/FD-1.jpeg">
+									<p>软盘的读写是通过软盘驱动器完成的。软盘驱动器设计能接收可移动式软盘，常用的就是容量为1.4MB的3.5英寸软盘。软盘存取速度慢，容量也小，但可装可卸、携带方便。</p>
+									<p>软盘虽是工作中不可缺少的，但同时也很容易出故障。在实际工作时常发生软盘不能读写，甚至连格式化操作也无法进行等。
+										如果使用不当造成软盘损坏，那么存储在盘上的文件或数据就可能丢失，如果此前盘上重要的文件或数据没有备份的话，就会给工作造成无法挽回的损失。</p>
+								</div>
+								<h4>机械硬盘(HDD)</h4>
+								<div class="content">
+									<p>硬盘有机械硬盘(HDD)和固态硬盘(SSD)之分。机械硬盘即是传统普通硬盘，主要由：盘片，磁头，盘片转轴及控制电机，磁头控制器，数据转换器，接口，缓存等几个部分组成。</p>
+									<img src="img/HDD-1.jpeg">
+									<p>磁头可沿盘片的半径方向运动，加上盘片每分钟几千转的高速旋转，磁头就可以定位在盘片的指定位置上进行数据的读写操作。信息通过离磁性表面很近的磁头，
+										由电磁流来改变极性方式被电磁流写到磁盘上，信息可以通过相反的方式读取。硬盘作为精密设备，尘埃是其大敌，所以进入硬盘的空气必须过滤。</p>
+								</div>
+								<h4>固态硬盘(SSD)</h4>
+								<div class="content">
+									<p>固态硬盘（Solid State Disk或Solid State Drive，简称SSD），又称固态驱动器，是用固态电子存储芯片阵列制成的硬盘。</p>
+									<p>固态硬盘在接口的规范和定义、功能及使用方法上与普通硬盘的完全相同，在产品外形和尺寸上基本与普通硬盘一致（新兴的U.2，M.2等形式的固态硬盘尺寸和外形与SATA机械硬盘完全不同）。</p>
+									<img src="img/SSD.jpeg">
+									<p>新一代的固态硬盘普遍采用SATA-2接口、SATA-3接口、SAS接口、MSATA接口、PCI-E接口、M.2接口、CFast接口、SFF-8639接口和NVME/AHCI协议。</p>
+									<p>基于闪存的固态硬盘是固态硬盘的主要类别，其内部构造十分简单，固态硬盘内主体其实就是一块PCB板，而这块PCB板上最基本的配件就是控制芯片，缓存芯片（部分低端硬盘无缓存芯片）和用于存储数据的闪存芯片。</p>
+								</div>
+								<!-- 查看上一条文章或下一条 -->
+								<div class="linkto">
+									<a href="know-memory-disk.html" style="float: left;">查看上一条文章：电脑内存</a>
+									<a href="know-GPU.html" style="float: right;">查看下一条文章：图形处理器</a>
+								</div>
+							</div>
+						</div>
+						<div class="col-md-1"></div>
+					</div>
+					<!-- 评论功能 -->
+					<div class="comment-area">
+						<!-- 操作的界面 -->
+						<form>
+							<div class="form-group">
+								<label for="area">评论:</label>
+								<textarea placeholder="说点什么吧..." class="form-control" id="area" cols="30" rows="10"></textarea>
+								<div class="row submit">
+									<div class="col-md-10"></div>
+									<div class="col-md-2">
+										<span class="useCount">0</span> <span>/</span> <span>200</span> <button class="btn btn-primary" id="send">发布</button>
+									</div>
+								</div>
+							</div> <!-- 微博内容列表 -->
+							<div class="contentList">
+								<ul> </ul>
+							</div>
+						</form>
+
+					</div>
+				</div>
+			</div>
+			<!-- 底部 -->
+			<div class="footer container-fluid">
+				<div class="container ">
+					<div class="beian">
+						<p>计算机硬件科普网</p>
+						<p>仅作为学习科普使用，无任何商业用途</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>

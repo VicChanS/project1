@@ -1,0 +1,100 @@
+* {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	text-decoration: none;
+	box-sizing: border-box;
+}
+
+
+a:hover {
+	text-decoration: none;
+}
+
+
+
+
+.logosearch {
+	margin: 0 auto;
+	display: flex;
+	margin-top: 30px;
+}
+
+
+.logosearch .form-inline {
+	margin-top: 20px;
+
+}
+
+
+.logosearch .form-inline .btn {
+	margin-left: 20px;
+}
+
+
+.primarynav {
+	margin-top: 20px;
+	background-color: #00acf5;
+}
+
+
+.com-hardware {
+	background-color: white;
+	padding-top: 20px;
+	padding-bottom: 20px;
+}
+
+.com-hardware .breadcrumb a {
+	color: #000000;
+}
+
+.com-hardware .btn a {
+	color: white;
+}
+
+
+.com-hardware .gpu {
+	background: url(../img/gpu-3.png) no-repeat;
+	height: 540px;
+	box-shadow: 10px 10px 5px #888888;
+}
+
+.com-hardware .cpu {
+	background: url(../img/CPU.png) no-repeat;
+	height: 540px;
+	box-shadow: 10px 10px 5px #888888;
+}
+
+.com-hardware .ram {
+	background: url(../img/RAM-0.png) no-repeat;
+	height: 540px;
+	box-shadow: 10px 10px 5px #888888;
+}
+
+.com-hardware .yingpan {
+	background: url(../img/SSD.png) no-repeat;
+	height: 540px;
+	box-shadow: 10px 10px 5px #888888;
+}
+
+.com-hardware button a:hover {
+	color: white;
+}
+
+.com-hardware .inline-word {
+	text-align: center;
+	padding-top: 250px;
+	color: white;
+}
+
+
+.footer {
+	padding-bottom: 20px;
+	background-color: #f8f9fa;
+	border-top: 2px solid #f0f0f0;
+}
+
+.beian p {
+	margin-top: 20px;
+	text-align: center;
+}

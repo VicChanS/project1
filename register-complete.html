@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>注册成功！</title>
+	</head>
+	<script src="bootstrap/js/jquery-3.1.1.min.js" type="text/javascript" charset="utf-8"></script>
+	<script type="text/javascript">
+		$(document).ready(function() {
+			function jump(count) {
+				window.setTimeout(function() {
+					count--;
+					if (count > 0) {
+						$("#second").html(count);
+						jump(count);
+					} else {
+						location.href = "login.html";
+					}
+				}, 1000);
+			}
+			jump(2);
+		});
+	</script>
+	</head>
+	<body>
+		恭喜你注册成功！
+		<span id="second" style="color:red">2</span>
+		秒内自动跳转，如不跳转请点击
+		<a href="login.html">这里</a>
+	</body>
+</html>

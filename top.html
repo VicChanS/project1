@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap.min.css" />
+		<script src="bootstrap/js/jquery-3.1.1.js" type="text/javascript" charset="utf-8"></script>
+		<script src="bootstrap/js/bootstrap.js" type="text/javascript" charset="utf-8"></script>
+		<script src="vue/vue.js" type="text/javascript" charset="utf-8"></script>
+		<link rel="stylesheet" type="text/css" href="css/element.css" />
+		<link rel="stylesheet" type="text/css" href="css/news-center.css" />
+		<script src="vue/elementindex.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/feedback.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/navtop.js" type="text/javascript" charset="utf-8"></script>
+		<link rel="stylesheet" type="text/css" href="font/bootstrap-icons.css" />
+		<title>计算机硬件科普网-天梯图</title>
+	</head>
+	<body>
+		<div id="app">
+			<div class="navtop container-fluid bg-light navbar-light ">
+				<nav class="container navbar navbar-expand-md ">
+					<!-- Brand -->
+					<a class="navbar-brand" href="#"><img src="img/logo.png"></a>
+
+					<!-- Toggler/collapsibe Button -->
+					<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+						<span class="navbar-toggler-icon"></span>
+					</button>
+
+					<!-- Navbar links -->
+					<div class="collapse navbar-collapse" id="collapsibleNavbar" style="margin-left: 50px;">
+						<ul class="navbar-nav">
+							<li class="nav-item">
+								<a class="nav-link" href="index.html">首页</a>
+							</li>
+							<li class="nav-item dropdown">
+								<a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">百科</a>
+								<div class="dropdown-menu">
+									<a class="dropdown-item" href="history-of-computer.html">计算机发展史</a>
+									<a class="dropdown-item" href="history-of-GPU.html">GPU发展史</a>
+									<a class="dropdown-item" href="history-of-CPU.html">CPU发展史</a>
+									<a class="dropdown-item" href="hardware.html">硬件百科</a>
+								</div>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link" href="news-center.html">新闻中心</a>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link" href="top.html">天梯图</a>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link" href="#" data-toggle="modal" data-target="#myModal">意见反馈</a>
+							</li>
+							<!-- 模态框 -->
+							<div class="modal fade" id="myModal">
+								<div class="modal-dialog">
+									<div class="modal-content">
+										<!-- 模态框头部 -->
+										<div class="modal-header">
+											<h4 class="modal-title">意见反馈&nbsp;<span class="small text-secondary" style="font-size: 12px;">您的意见对我们很有帮助</span></h4>
+											<button type="button" class="close" data-dismiss="modal">&times;</button>
+										</div>
+										<!-- 模态框主体 -->
+										<div class="modal-body">
+											<textarea class="form-control" rows="5" id="cmt"></textarea>
+										</div>
+										<!-- 模态框底部 -->
+										<div class="modal-footer">
+											<button type="button" class="btn btn-primary" id="ty">提交</button>
+											<button type="button" class="btn btn-secondary" data-dismiss="modal">关闭</button>
+										</div>
+									</div>
+								</div>
+							</div>
+							<li class="nav-item" id="login">
+								<a class="nav-link login" style="display: block;" href="login.html">登录</a>
+								<p class="nav-link user" style="display: none;"><i class="bi bi-person-circle"></i></p>
+							</li>
+
+							<li class="nav-item" id="register">
+								<a class="nav-link register" style="display: block;" href="register.html">注册</a>
+								<p class="nav-link logout" style="display: none;">登出</p>
+							</li>
+						</ul>
+					</div>
+				</nav>
+			</div>
+			<div class="newslist container-fluid">
+				<div class="container">
+					<!-- 面包屑导航 -->
+					<nav class="breadcrumb">
+						<a class="breadcrumb-item" href="index.html">首页</a>
+						<a class="breadcrumb-item" href="天梯图.html">天梯图</a>
+					</nav>
+					<!-- 列表组 -->
+					<div class="top">
+						<el-tabs :tab-position="tabPosition">
+							<el-tab-pane label="CPU">
+								<p>图片来源：知乎用户:MaxSam,搬运仅作学习科普用途</p>
+								<ul class="list-group">
+									<li class="list-group-item" data-toggle="collapse" data-target="#demo">AMD最新台式机处理器CPU汇总</li>
+									<li class="list-group-item collapse" id="demo">
+										<img src="img/AMD-0.jpg" style="width: 100%;">
+									</li>
+									<li class="list-group-item" data-toggle="collapse" data-target="#demo1">英特尔Intel 最新台式机处理器CPU汇总</li>
+									<li class="list-group-item collapse" id="demo1">
+										<img src="img/Intel-0.jpg" style="width: 100%;">
+									</li>
+									<li class="list-group-item" data-toggle="collapse" data-target="#demo2">2022年AMD移动端6000系列处理器性能天梯排行参考</li>
+									<li class="list-group-item collapse" id="demo2">
+										<img src="img/amd.jpg" style="width: 100%;">
+									</li>
+									<li class="list-group-item" data-toggle="collapse" data-target="#demo3">2022年intel移动端12代酷睿处理器性能天梯排行参考</li>
+									<li class="list-group-item collapse" id="demo3">
+										<img src="img/lt-intel.jpg" style="width: 100%;">
+									</li>
+									<li class="list-group-item" data-toggle="collapse" data-target="#demo4">2022年3Dmark 性能天梯（CPU游戏性能跑分）</li>
+									<li class="list-group-item collapse" id="demo4">
+										<img src="img/3DMark.jpg" style="width: 100%;">
+									</li>
+									<li class="list-group-item" data-toggle="collapse" data-target="#demo5">2022年CPU天梯图</li>
+									<li class="list-group-item collapse" id="demo5">
+										<img src="img/top.jpg" style="width: 100%;">
+									</li>
+								</ul>
+							</el-tab-pane>
+							<el-tab-pane label="GPU">
+								<p>图片来源：知乎用户:MaxSam,搬运仅作学习科普用途</p>
+								<ul class="list-group">
+									<li class="list-group-item" data-toggle="collapse" data-target="#demo6">显卡天梯图</li>
+									<li class="list-group-item collapse" id="demo6">
+										<img src="img/GPU-0.jpg" style="width: 100%;">
+									</li>
+									<li class="list-group-item" data-toggle="collapse" data-target="#demo7">主流显卡3DMARK性能天梯图</li>
+									<li class="list-group-item collapse" id="demo7">
+										<img src="img/gpu-3dmark.jpg" style="width: 100%;">
+									</li>
+									<li class="list-group-item" data-toggle="collapse" data-target="#demo8">2PASSMAR笔记本显卡排行榜</li>
+									<li class="list-group-item collapse" id="demo8">
+										<img src="img/lt-gpu.jpg" style="width: 100%;">
+									</li>
+									</li>
+									<li class="list-group-item" data-toggle="collapse" data-target="#demo9">显卡算力排行</li>
+									<li class="list-group-item collapse" id="demo9">
+										<img src="img/gpu-2.jpg" style="width: 100%;">
+									</li>
+								</ul>
+							</el-tab-pane>
+						</el-tabs>
+					</div>
+				</div>
+			</div>
+			<!-- 底部 -->
+			<div class="footer container-fluid">
+				<div class="container ">
+					<div class="beian">
+						<p>计算机硬件科普网</p>
+						<p>仅作为学习科普使用，无任何商业用途</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</body>
+
+	<script>
+		new Vue({
+			el: '#app',
+			data() {
+				return {
+					tabPosition: 'top'
+				}
+			},
+		})
+	</script>
+</html>
